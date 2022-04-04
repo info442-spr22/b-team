@@ -18,7 +18,7 @@ McDonald, John. “Despite improved access, digital divide persists for minority
 
   ### Better Educators 
 
-Team Members:
+#### Team Members:
 Product Designer: 
 Katelin Sayachith
 PM:
