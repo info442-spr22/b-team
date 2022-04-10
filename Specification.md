@@ -29,16 +29,32 @@ Skipton, Alice. “Seeking a Path to Educational Justice in Washington State | U
 ### Features
 
 **1) Washington State Map (Home Page):**
+
 Our landing page will feature an interactive map of the state of washington. The user will be able to hover over their respective county within the state, allowing them to click and be redirected to that county's resources. This provides a quick, intuitive path for educators to quickly access the information they need for their respective location. 
 
-**2)Filter Systems:**
-_(Allowing user to search type of resource they need (ex: wifi) and shows availability)_ 
-We will also have a filter system feature that would allow users to search for a type of resource that they need, like WiFi. It will also show whether or not that resource is available. The user will be given the list of items that they asked for, and they will be provided with information on how long they can have the resource for. Another piece of information provided is the type of technology so that users will know for sure that what they are searching for is what they are looking for. And lastly, the filter system will include a distance measure so that the user will know how far away they have to go to collect the resource.
+<img src="diagrams/Home.jpg">
 
-**3)Rental systems**
+
+**2)Rental systems**
 
 - Equipment list
 - Reserve equipment
 
 Another one of our features will be the student technology rental system. This rental system will run through the school so only students will be able to check out technology products. This feature will incorporate an equipment list that allows them to reserve equipment based on their need. We will also include an overview section that explains the process to the students so that they know what is expected of them during their time using the equipment. Applying this feature as a part of our website will allow families with low-income to have a solution for accessing technology for educational purposes.
+
+<img src="diagrams/Rentals.jpg">
+<img src="diagrams/Rental selected.jpg">
+
+**3)Filter Systems:**
+
+_(Allowing user to search type of resource they need (ex: wifi) and shows availability)_ 
+We will also have a filter system feature that would allow users to search for a type of resource that they need, like WiFi. It will also show whether or not that resource is available. The user will be given the list of items that they asked for, and they will be provided with information on how long they can have the resource for. Another piece of information provided is the type of technology so that users will know for sure that what they are searching for is what they are looking for. And lastly, the filter system will include a distance measure so that the user will know how far away they have to go to collect the resource.
+
+
+<img src="diagrams/Rentals (filters applied).jpg">
+
+
+
+
+
 

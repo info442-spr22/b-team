@@ -1,6 +1,6 @@
- ## Team Better Educators 
+ # Team Better Educators 
 
-#### Team Members:
+### Team Members:
 - Product Designer: Katelin Sayachith
 
 - PM: Jeanne Choi
