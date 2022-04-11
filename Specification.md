@@ -40,7 +40,7 @@ Our landing page will feature a navigation bar at the top to get to different pa
 - Equipment list
 - Reserve equipment
 
-Another one of our features will be the student technology rental system. This rental system will run through the school so only students will be able to check out technology products. This feature will incorporate an equipment list that allows them to reserve equipment based on their need. We will also include an overview section that explains the process to the students so that they know what is expected of them during their time using the equipment. The page will include a nav bar at the top, a header, search bar underneath the header, filter options on the left screen, and various photos of available equipment. 
+Another one of our features will be the student technology rental system. This feature will incorporate an equipment list that allows them to reserve equipment based on their need. We will also include an overview section that explains the process to the students so that they know what is expected of them during their time using the equipment. The page will include a nav bar at the top, a header, search bar underneath the header, filter options on the left screen, and various photos of available equipment. 
 
 <img src="diagrams/Rentals.jpg">
 
