@@ -62,7 +62,7 @@ We will also have a filter system feature that would allow users to search for a
 <img src="diagrams/Rentals (filters applied).jpg">
 
 
-### About Page:
+### 4) About Page:
 
 The about page will be a simple display where users will only have the interactivity to scroll up and down the page. There will be a nav bar, about portion, and FAQ section. The _About_ description will include the purpose and goal of our website. With a photo of a logo. Below this will be the _FAQ_ portion that will include around 10 commonly asked questions that users could go to recieve help.
 
