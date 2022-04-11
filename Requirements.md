@@ -28,17 +28,17 @@ Example diagram: https://www.nytimes.com/interactive/2021/us/washington-covid-ca
 ## Rental Systems :
 
 1. Nav bar, with header, scroll through clickable images
-    - Only the section of preview cards in the Rentals page will be able to be scrolled through.
+- Only the section of preview cards in the Rentals page will be able to be scrolled through.
 2. Overview section with text explaining how to use platform
 3. Page will include a search bar to search what you want or browse through images
-    - When the search bar is submitted, results will be shown based on matching keywords
+- When the search bar is submitted, results will be shown based on matching keywords
 4. Can get more information by clicking on item and reserve using name email and phone number
-    - When users click on their wanted image a second page will appear showing description of equipment and rental options. 
-    - The rental reserve system uses a form submission with the following fields that need to be inputted in order for a user to reserve: 
-        - Name 
-        - Email
-        - Phone Number 
-    - When the form is successfully submitted, the website will display a confirmation pop up that displays the form input and text.
+- When users click on their wanted image a second page will appear showing description of equipment and rental options. 
+- The rental reserve system uses a form submission with the following fields that need to be inputted in order for a user to reserve: 
+    - Name 
+    - Email
+    - Phone Number 
+- When the form is successfully submitted, the website will display a confirmation pop up that displays the form input and text.
 5. Error messages in respective fields will be displayed if the user presses the submit button without filling out all information.
 6. After pressing submit, a confirmation message is displayed (as a pop-up?)
 
@@ -51,21 +51,21 @@ Example diagram: https://www.nytimes.com/interactive/2021/us/washington-covid-ca
 4. First filter option will be location, followed by distance, and finally, the type of technology.
 5. Location will be a text input.
 6. Type of technology will be an option group.
-    - Options will be laptops, WiFi, tablets, cameras, and microphones.
+- Options will be laptops, WiFi, tablets, cameras, and microphones.
 7. Distance will be an option group.
-    - Options will be 1 mile, 2 miles, 5 miles, and 5+ miles.
+- Options will be 1 mile, 2 miles, 5 miles, and 5+ miles.
 8. If there are no available list items that match the selected filters, display an error message at the top of the item list, and then provide the available items in a wider range.
 9. When filters are in use, display the current filters under the rental search bar.
-    - These will have an x button on the right side of the displayed filter to allow users to cancel or take out the filter.
+- These will have an x button on the right side of the displayed filter to allow users to cancel or take out the filter.
 
 ## About/FAQ :
 
 1. Overall header with description
 2. Page is divided in 2 sections. About and FAQ, Users can scroll through to view full page
 3. The first section will be the content of the About description including the following:
-    - About title
-    - About description underneath the title
-    - Image of logo to the left
+- About title
+- About description underneath the title
+- Image of logo to the left
 4. The second section will be the FAQ with the following information:
-    - Image of an question mark or something easy to spot relating to FAQs
-    - Numbered questions bolded, with answer to question directly underneath 
+- Image of an question mark or something easy to spot relating to FAQs
+- Numbered questions bolded, with answer to question directly underneath 
