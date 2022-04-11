@@ -40,15 +40,26 @@ Our landing page will feature an interactive map of the state of washington. The
 - Equipment list
 - Reserve equipment
 
-Another one of our features will be the student technology rental system. This rental system will run through the school so only students will be able to check out technology products. This feature will incorporate an equipment list that allows them to reserve equipment based on their need. We will also include an overview section that explains the process to the students so that they know what is expected of them during their time using the equipment. Applying this feature as a part of our website will allow families with low-income to have a solution for accessing technology for educational purposes.
+
+Another one of our features will be the student technology rental system. This rental system will run through the school so only students will be able to check out technology products. This feature will incorporate an equipment list that allows them to reserve equipment based on their need. We will also include an overview section that explains the process to the students so that they know what is expected of them during their time using the equipment. 
+
+Users will be able to reserve equipment by searching for specific technology at the top search bar, browse by scrolling through the pictures, or simply press the image to find more information. 
 
 <img src="diagrams/Rentals.jpg">
+
+Once a user has selected the image for their requested equipment, further descriptions and images can be found. This screen will be where the user reserves the equipment by entering their name, email, and phone number. Once information is filled the user will press the rent button to get a confirmation of their equipment. 
+
 <img src="diagrams/Rental selected.jpg">
+
+Applying this feature as a part of our website will allow families with low-income to have a solution for accessing technology for educational purposes. We intend on giving students a way to access technology that they may have been stripped from due to COVID-19 and we are hoping that the rental system will allow students to gain this access again.
+
 
 **3)Filter Systems:**
 
 _(Allowing user to search type of resource they need (ex: wifi) and shows availability)_ 
-We will also have a filter system feature that would allow users to search for a type of resource that they need, like WiFi. It will also show whether or not that resource is available. The user will be given the list of items that they asked for, and they will be provided with information on how long they can have the resource for. Another piece of information provided is the type of technology so that users will know for sure that what they are searching for is what they are looking for. And lastly, the filter system will include a distance measure so that the user will know how far away they have to go to collect the resource.
+
+We will also have a filter system feature that would allow users to search for a type of resource that they need, like WiFi, and show whether or not that resource is available. By using the filters, the user will be given the list of items that they asked for, and they will be provided with information on how long they can have the resource for. The filters will be inclusive because we want to provide the user with any resource that fits the criteria they searched for. The list of filterable resources include the type of technology, such as laptops, WiFi, tablets, cameras, and microphones. It will also include location that the user can input, which will filter down the available resources to only have those that are available in or near that specific area. And lastly, distance will be a filter as well, in which users can choose to filter down the available resources within a certain distance, such as 1 mile, 2 miles, 5 miles, or 5+ miles. This will allow users to pick how far they want to go to get this resource. There might be a chance that there will be no list items that match all the selected filters, so the system will tell the user this and provide the available items that are in a wider range. For example, if the user asks for a laptop within 1 mile of their location but they are not available, the system will alert the user of this and provide a list of laptops that are within 2, 5, or 5+ miles of the user’s location instead, depending on which distance is closest and has the resources available. 
+
 
 
 <img src="diagrams/Rentals (filters applied).jpg">
