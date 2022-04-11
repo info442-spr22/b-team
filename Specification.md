@@ -29,7 +29,8 @@ Skipton, Alice. “Seeking a Path to Educational Justice in Washington State | U
 
 ### 1) Washington State Map (Home Page):
 
-Our landing page will feature a navigation bar at the top to get to different pages, a headline, and an interactive map of the state of Washington. The map will contain the name of counties as hyperlinks. The user will be able to hover over their respective county within the state, allowing them to click and be redirected to that county's resources. This provides a quick, intuitive path for educators to quickly access the information they need for their respective location. The map will be static; users will not be able to zoom in or out on the map.
+Our landing page will feature a navigation bar at the top to get to different pages, a headline, and an interactive map of the state of Washington. The navbar pages will have the app’s name, the logo, and the pages that can be accessed are the home, about, and rental pages. The map will contain the name of counties as hyperlinks. Users will not be able to zoom in or out on the map as it will be static. The user will be able to hover over their respective county within the state, allowing them to click on the county and be redirected to that county's resources. From this list of resources, the user can choose to rent the items or not, and filter down the resources some more if they so wish. This provides a quick, intuitive path for educators to quickly access the information they need for their respective location. 
+
 
 <img src="diagrams/Home.jpg">
 
