@@ -40,12 +40,11 @@ Our landing page will feature an interactive map of the state of washington. The
 - Equipment list
 - Reserve equipment
 
-
-Another one of our features will be the student technology rental system. This rental system will run through the school so only students will be able to check out technology products. This feature will incorporate an equipment list that allows them to reserve equipment based on their need. We will also include an overview section that explains the process to the students so that they know what is expected of them during their time using the equipment. 
-
-Users will be able to reserve equipment by searching for specific technology at the top search bar, browse by scrolling through the pictures, or simply press the image to find more information. 
+Another one of our features will be the student technology rental system. This rental system will run through the school so only students will be able to check out technology products. This feature will incorporate an equipment list that allows them to reserve equipment based on their need. We will also include an overview section that explains the process to the students so that they know what is expected of them during their time using the equipment. The page will include a nav bar at the top, a header, search bar underneath the header, filter options on the left screen, and various photos of available equipment. 
 
 <img src="diagrams/Rentals.jpg">
+
+Users will be able to reserve equipment by searching for specific technology at the top search bar, browse by scrolling through the pictures, or simply press the image to find more information. No interaction will be made when users hover over the images. 
 
 Once a user has selected the image for their requested equipment, further descriptions and images can be found. This screen will be where the user reserves the equipment by entering their name, email, and phone number. Once information is filled the user will press the rent button to get a confirmation of their equipment. 
 
@@ -64,7 +63,9 @@ We will also have a filter system feature that would allow users to search for a
 <img src="diagrams/Rentals (filters applied).jpg">
 
 
+### About Page:
 
+The about page will be a simple display where users will only have the interactivity to scroll up and down the page. There will be a nav bar, about portion, and FAQ section. The _About_ description will include the purpose and goal of our website. With a photo of a logo. Below this will be the _FAQ_ portion that will include around 10 commonly asked questions that users could go to recieve help.
 
-
+<img src="diagrams/About.jpg">
 
