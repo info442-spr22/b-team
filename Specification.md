@@ -28,14 +28,14 @@ Skipton, Alice. “Seeking a Path to Educational Justice in Washington State | U
 
 ### Features
 
-**1) Washington State Map (Home Page):**
+### 1) Washington State Map (Home Page):
 
 Our landing page will feature an interactive map of the state of washington. The user will be able to hover over their respective county within the state, allowing them to click and be redirected to that county's resources. This provides a quick, intuitive path for educators to quickly access the information they need for their respective location. 
 
 <img src="diagrams/Home.jpg">
 
 
-**2)Rental systems**
+### 2) Rental Systems:
 
 - Equipment list
 - Reserve equipment
@@ -54,12 +54,11 @@ Once a user has selected the image for their requested equipment, further descri
 Applying this feature as a part of our website will allow families with low-income to have a solution for accessing technology for educational purposes. We intend on giving students a way to access technology that they may have been stripped from due to COVID-19 and we are hoping that the rental system will allow students to gain this access again.
 
 
-**3)Filter Systems:**
+### 3) Filter Systems:
 
 _(Allowing user to search type of resource they need (ex: wifi) and shows availability)_ 
 
 We will also have a filter system feature that would allow users to search for a type of resource that they need, like WiFi, and show whether or not that resource is available. By using the filters, the user will be given the list of items that they asked for, and they will be provided with information on how long they can have the resource for. The filters will be inclusive because we want to provide the user with any resource that fits the criteria they searched for. The list of filterable resources include the type of technology, such as laptops, WiFi, tablets, cameras, and microphones. It will also include location that the user can input, which will filter down the available resources to only have those that are available in or near that specific area. And lastly, distance will be a filter as well, in which users can choose to filter down the available resources within a certain distance, such as 1 mile, 2 miles, 5 miles, or 5+ miles. This will allow users to pick how far they want to go to get this resource. There might be a chance that there will be no list items that match all the selected filters, so the system will tell the user this and provide the available items that are in a wider range. For example, if the user asks for a laptop within 1 mile of their location but they are not available, the system will alert the user of this and provide a list of laptops that are within 2, 5, or 5+ miles of the user’s location instead, depending on which distance is closest and has the resources available. 
-
 
 
 <img src="diagrams/Rentals (filters applied).jpg">
