@@ -24,13 +24,12 @@ Skipton, Alice. “Seeking a Path to Educational Justice in Washington State | U
  
  This web app provides an interactive state map for a quick intuitive path of resources, a rental system for educators to access technology for student educational purposes, and filter systems within the rental platform. These features are to aid low-income students in acquiring the necessary digital resources for a high-quality education through the support of their Washington State  K-12 educators.
 
-  ### Site Layout
+### Site Layout
 
-### Features
 
 ### 1) Washington State Map (Home Page):
 
-Our landing page will feature an interactive map of the state of washington. The user will be able to hover over their respective county within the state, allowing them to click and be redirected to that county's resources. This provides a quick, intuitive path for educators to quickly access the information they need for their respective location. 
+Our landing page will feature a navigation bar at the top to get to different pages, a headline, and an interactive map of the state of Washington. The map will contain the name of counties as hyperlinks. The user will be able to hover over their respective county within the state, allowing them to click and be redirected to that county's resources. This provides a quick, intuitive path for educators to quickly access the information they need for their respective location. The map will be static; users will not be able to zoom in or out on the map.
 
 <img src="diagrams/Home.jpg">
 
