@@ -9,7 +9,7 @@ According to New America, internet access at home is required for students to re
 Washington State, specifically, has seen increased inequities in quality education through the pandemic. In 2019, the Washington Education Association began the process of creating educational justice work called “A Roadmap to Reducing Barriers to Educational Justice in Washington State” that states various barriers to the educational justice that our state’s system of education presents for underrepresented and marginalized students (Skipton, 2021). This was only exemplified when COVID-19 hit. Causes such as lack of funds, conditions, and large student-to-teacher ratios have all contributed to inadequate education for low-income students. With many existing solutions not being able to fulfill the needs that students need for quality education, a better solution must be made that allows students from all income levels and all necessities to come together and get the proper education that they need.
 
 
- ### Citations
+### Citations
 Farry, Maggie. “An Old Problem in the New Normal: The Digital Divide.” New America, 6 July 2021, 	https://www.newamerica.org/the-thread/an-old-problem-in-the-new-normal-the-digital-divide/
 
 Guterres, António. “— SDG Indicators.” — SDG Indicators https://unstats.un.org/sdgs/report/2021/
@@ -20,11 +20,11 @@ Skipton, Alice. “Seeking a Path to Educational Justice in Washington State | U
 
  
 
- ## Solution
+## Solution
  
- This web app provides an interactive state map for a quick intuitive path of resources, a rental system for educators to access technology for student educational purposes, and filter systems within the rental platform. These features are to aid low-income students in acquiring the necessary digital resources for a high-quality education through the support of their Washington State  K-12 educators.
+This web app provides an interactive state map for a quick intuitive path of resources, a rental system for educators to access technology for student educational purposes, and filter systems within the rental platform. These features are to aid low-income students in acquiring the necessary digital resources for a high-quality education through the support of their Washington State  K-12 educators.
 
-### Site Layout
+## Site Layout
 
 
 ### 1) Washington State Map (Home Page):

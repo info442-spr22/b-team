@@ -11,18 +11,24 @@ Every page in the site includes a navigation bar with links to all pages:
 - About/FAQ
 
 
-## Home ~ Washington State Static Map 
+## Home/Landing Page
 
-1. Landing page will feature a navigation bar at the top of the page.
-2. Navigation bar page options will have the home, about, and rental pages on the right side.
-3. Left side of the navigation bar will have the app’s name and logo.
-4. Users will be able to click to various pages from the navigation bar (about, etc.)
-5. Landing page will feature an interactive Washington state map.
-6. Static map will include list of resources per county for the state of Washington
-7. Users will be able to scroll up or down to choose their county
-8. User will then be able to click the hyperlinked county. Once they click, user is directed to a new page for that counties resources
+1. Contains Navigation bar at the top of the page with options to navigate to the home page and rentals page
+2. Contains an overall header with description of the app
+3. Below the header will be a photo of washington state,
+4. The page is divided into 2 sections. The about, and the FAQ, Users can scroll through to view the full page.
+5. The first section will be the content of the About description including the following:
+    - About title
+    - About description underneath the title
+    - Image of logo to the left
+6. The second section will be the FAQ with the following information:
+7. Image of an question mark or something easy to spot relating to FAQs
+8. Numbered questions bolded, with answer to question directly underneath 
+
  
-## Home Option 2 ~ Interactive Washington State Map (_Stretch Goal_) :
+## Home Option 2 (_Stretch Goal_) :
+
+**Interactive Washington State Map**
 
 Example diagram: https://www.nytimes.com/interactive/2021/us/washington-covid-cases.html
 
