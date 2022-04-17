@@ -11,7 +11,7 @@ Every page in the site includes a navigation bar with links to all pages:
 - About/FAQ
 
 
-## Home ~ Washington State Static Map :
+## Home ~ Washington State Static Map 
 
 1. Landing page will feature a navigation bar at the top of the page.
 2. Navigation bar page options will have the home, about, and rental pages on the right side.
@@ -31,7 +31,7 @@ Example diagram: https://www.nytimes.com/interactive/2021/us/washington-covid-ca
 3. When users click on their county of choice, they will be redirected to its respective resource page (external from our site)
 
  
-## Forum Page:
+## Forum Page
 1. The forum page will include: 
     - Button on top to enable user to post to the forum
         - Button that navigates the user to the post page, away from the forum page
@@ -44,7 +44,7 @@ Example diagram: https://www.nytimes.com/interactive/2021/us/washington-covid-ca
     - Forums will include two arrow buttons to navigate to the prev and past posts 
     - Forum page will be in one section, with the main forum component in the middle of the user’s screen
  
-## Post Page:
+## Post Page
 1. Post page will have a post component for the user to utilize in order to post to the forum page. 
 Post component will be positioned in the middle of the screen with the following fields:
     - title of Post
@@ -84,7 +84,7 @@ Post component will be positioned in the middle of the screen with the following
 # Non-Functional Requirements
 
 ## Reliability 
-    Keeping links/resources up to date through a comment form for the resource page. If a resource provided is out of date/no longer active than a comment form could be submitted
+Keeping links/resources up to date through a comment form for the resource page. If a resource provided is out of date/no longer active than a comment form could be submitted
 
 1. Contains a report button on the home page and pages for individual rentals
 2. Report button opens a pop-up
@@ -106,7 +106,7 @@ Post component will be positioned in the middle of the screen with the following
     - Contains text about completion of form
 
 ## Usability/Accessibility
-    Website is responsive and usable on mobile devices, laptops, and desktops
+Website is responsive and usable on mobile devices, laptops, and desktops
 
 1. Media Queries work accordingly for all screen sizes:
     - Phones
