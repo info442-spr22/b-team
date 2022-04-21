@@ -9,8 +9,7 @@
 3. When changes are made, update to branch and deploy after each sprint to test on computer
 
 ## Test Environments
-- Tests will be on teams computers first by deploying to the local host. Testers will use _Chrome_
-- Once complete we will then deploy to production
+Tests will be on teams computers first by deploying to the local host. Testers will use _Chrome_ as their main environment. Once testing is complete we will then deploy to production.
 
 ### Manual Acceptance Testing Script
 
