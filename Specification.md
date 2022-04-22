@@ -62,14 +62,14 @@ Users will be prompted to a landing page that prompts the user with two options 
 
 <img src="diagrams/login.png">
 
-- **Log In**:
-    The log in page that the user sees when first opening the app will have  a text box prompt for email/username and password. Users will only be able to log in if both fields are completed. Once a user presses the log-in button there will be two scenarios. If a text is empty or not found in our system (not correct username or password combo)  an error message appears next to the text box, not allowing users to continue. If successful with correct information the user will continue to the forum screen.
-- **Create an Account**:
-    If a user selects “create an account” a new page will appear with the following information that the user must fill out before continuing. Name (first and last), Role, Username, Email, and Password. Once all fields are filled out, users will be able to press the create account button to continue to the forum page.  If there is missing information, the user will not be able to move on to the next page.
+#### Log In and Sign Up:
 
-<img src="diagrams/create-account.png">
+In order for users to access and interact in the forum page, the user must be signed in to an account. All user accounts are based on their Google account; on the login page, there will be a button to allow the user to log in or sign up with their google account. Upon clicking on the button to continue with google, the user may be sent to an external site to enter their Google account information, but they will be sent to the app’s home page if their login was successful. If entering the forum page from another page without being signed in,  users will be prompted to log-in before viewing. If on the home page, the nav bar will consist of the option to Log-in. The option to log in will also be available on the nav bar in all screens. 
+
 
 A log out option button will be at the top header nav bar (accessible when hovering over "Account"). 
+
+#### Seeing posts made by the user:
 
 Additionally, users will able to view all posts they have made by clicking the "Your Posts" button in the drop-down menu of the navigation bar. 
 
