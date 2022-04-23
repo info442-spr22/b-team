@@ -104,9 +104,9 @@ Example => Need laptops | Tacoma | Posted by Angela Houston|02/12/22`
 1. If the user is not logged in, delete buttons on the posts/comments will be static.
 
 ## Google Authentication
-
-
-
+1. users will be prompted to login with their google accounts
+2. Page will have a google sign in button that is used to automatically rendered sign-in button
+3. Once clicked user will be prompted with popup window asking which of their google accounts they will be logging in with. 
 # Non-Functional Requirements
 
 ## Reliability 
