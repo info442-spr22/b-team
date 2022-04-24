@@ -33,6 +33,16 @@ Tests will be on teams computers first by deploying to the local host. Testers w
     - Your Posts
 
 **Forum Page**
+1. Expect to see the navigation bar at the top of the page and navigation links take the user to the correct pages (navigation 1)
+2. Expect to see text field how up for text entry (forum 1b)
+    - Able to click and type within text box
+3. Expect to see forum component that shows other posts (forum 1e)
+    - Forum should show other posts chronological order
+    - Should allow scrolling through posts
+    - Formatting of posts should be [Post Title | Location | Posted by Author | Date]
+4. Post button shows up and is clickable (forum 1c)
+5. Error message displays if user tries to post with no text (forum 1ci)
+
 
 **Individual Forum Post**
 1. Expect to see the navigation bar at the top of the page (navigation 1)
