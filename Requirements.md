@@ -52,7 +52,7 @@ Example diagram: https://www.nytimes.com/interactive/2021/us/washington-covid-ca
 ## Your Posts Page (Stretch)
 1. Contains a navigation bar at the top of the page
 2. Title of the page (“Your Posts”) is centered at the top of the page
-3. Below the title on the left side, the user’s account information is displayed (name, username, role) 
+3. Below the title on the left side, the user’s account information is displayed (name, username) 
 4. Below the title on the right side, previews of the user’s posts are displayed in chronological order (older posts towards the bottom, newer posts towards the top)
 5. If the user has a large amount of posts, they will be able to scroll up and down on the page to view them
 6. Clicking on the post previews (any area within the sectioned lines) will redirect the user to a page with the post’s full details and comments
