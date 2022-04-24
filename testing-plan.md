@@ -50,10 +50,24 @@ Tests will be on teams computers first by deploying to the local host. Testers w
 
 
 **Deleting Posts/Comments (stretch goal)**
+1. Expect to see the navigation bar at the top of the page and navigation links take the user to the correct pages (navigation 1)
+2. When viewing an individual post, expect to see a “Delete Post” button on the upper right corner of the post’s box that is clickable (deleting posts/comments 2)
+3. Expect to see a confirmation message (“Are you sure you want to delete this post?”) pop-up with two buttons giving the user the options of “Yes” and “Cancel” (deleting posts/comments 3)
+    - Expect to see the post get deleted if user clicks “Yes” button (deleting posts/comments 4)
+    - Expect to see the individual post details again and pop-up to go away if user clicks “Cancel” button (deleting posts/comments 5)
+4. Expect to see a “Delete Comment” button that is clickable on a comment (deleting posts/comments 6)
+5. Expect to only be able to delete a comment when logged in (deleting posts/comments 7)
+6. Expect to see unclickable delete buttons if user is not logged in (deleting posts/comments 8)
 
 **Your Posts (stretch goal)**
+1. Expect to see the navigation bar at the top of the page and navigation links take the user to the correct pages (navigation 1)
+2. Expect to see the page titled “Your Posts” centered under the navigation bar (your posts 2)
+3. Expect to see the user’s account information (name, account) below the title on the left side (your posts 3)
+4. Expect to see previews of the user’s posts displayed in chronological order (newer posts at the top, older posts at the bottom) below the title on the right side (your posts 4)
+5. Expect to be able to scroll up and down the page if the user has a lot of posts (your posts 5)
+6. Expect the posts to be clickable and redirects to the page with the individual post’s full details and comments (your posts 6)
 
-**Googe Autentication**
+**Googe Authentication**
 
 ## Defect Management
 If defects are found during testing this bug will be reported to team PM. The PM will notify developers of the bug via github milestones/issues in the comments. Then the PM will divide up the work based on the availability or tasks of developers.
