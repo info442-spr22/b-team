@@ -4,33 +4,40 @@
 **Manual testing** will be the main type of testing done
 
 ## Process
-1. Who will test: Each team member will test their assigned test script
-2. When will tests be executed: At the end of each sprint
-3. When changes are made, update to branch and deploy after each sprint to test on computer
+1. Who will test: 
+    Each team member will test their assigned feature as they are developing and the product designer will do the final test.
+3. When will tests be executed:
+    At the end of each sprint, the product designer will go through the testing script to check all features
+4. When changes are made and the developer thinks their feature meets requirements, they can open a pull request and deploy to prepare for acceptance testing.
+
 
 ## Test Environments
-Tests will be on teams computers first by deploying to the local host. Testers will use _Chrome_ as their main environment. Once testing is complete we will then deploy to production.
+Tests will be on teams computers first by deploying to the local host. Testers will use _Chrome_ as their main environment. Once testing is complete we will then deploy to production and run the final acceptance testing. 
 
 ### Manual Acceptance Testing Script
 
 **Navigation Bar** 
-1. Expect to see an image of the app logo and the name of the application on the side of the navigation bar. On the right side of the bar expect to see the text of the home, forum and account navigation buttons (navigation bar 1)
-1. Expect to see options for the user when the user hovers over  the accounts button on the navigation bar. (navigation 2, 3)
+1. On every page of the website (except the log-in page), expect to see a navgivation bar at the top of the screen
+2. Expect to see an image of the app logo and the name of the application on the side of the navigation bar. On the right side of the bar expect to see the text of the home, forum and account navigation buttons (navigation bar 1)
+3. Expect to see options for the user when the user hovers over  the accounts button on the navigation bar. (navigation 2, 3)
     - Your posts
     - Logout 
-1. Navigation links take the user to the correct page (navigation 1 c,d,e)
+4. Navigation links take the user to the correct page (navigation 1 c,d,e)
     - Home
     - Forum
     - Your Posts
 
-**Home Page**
+**Home Page/Googe Authentication (User not logged-in)**
+1. When first entering the website or when not logged in as a user, expect to see a sign in button for the user to click.
+2. Button is a google sign in button,  a prompt asking the user to sign in via their google accounts should pop up. 
+3. Users will then be able to see their google accounts and pick which one they want in order to sign in. 
+4. After successfull log-in, expect to be redirected to the home/landing page with their desired google account.
+5. The log in/sign up page is the only page that can be accessed by users who are not logged in to their google accounts
 
-1. Expect to see the overall header centered at the top of the page with an image of Washington State directly below.  (home/landing 1)
+**Home Page (User Logged In)**
+
+1. On visit to home page, expect to see the overall header centered at the top of the page with an image of Washington State directly below.  (home/landing 1)
 2. Expect to see 2 sections below titled “About” with a small description of the product and the “FAQ” portion (home/landing 4-6). 
-3. Navigation links take the user to the correct page (navigation 1 c,d,e)
-    - Home
-    - Forum
-    - Your Posts
 
 **Forum Page**
 1. Expect to see the navigation bar at the top of the page and navigation links take the user to the correct pages (navigation 1)
@@ -75,11 +82,7 @@ Tests will be on teams computers first by deploying to the local host. Testers w
 5. Expect to be able to scroll up and down the page if the user has a lot of posts (your posts 5)
 6. Expect the posts to be clickable and redirects to the page with the individual post’s full details and comments (your posts 6)
 
-**Googe Authentication**
-1. Expect to see a sign in button for the user to click.
-2. Button is a google sign in button,  a prompt asking the user to sign in via their google accounts should pop up. 
-3. Users will then be able to see their google accounts and pick which one they want in order to sign in. 
-4. Expect to login into the home/landing page with their desired google account. 
+ 
 
 
 ## Defect Management
