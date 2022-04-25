@@ -9,7 +9,7 @@ According to New America, internet access at home is required for students to re
 Washington State, specifically, has seen increased inequities in quality education through the pandemic. In 2019, the Washington Education Association began the process of creating educational justice work called “A Roadmap to Reducing Barriers to Educational Justice in Washington State” that states various barriers to the educational justice that our state’s system of education presents for underrepresented and marginalized students (Skipton, 2021). This was only exemplified when COVID-19 hit. Causes such as lack of funds, conditions, and large student-to-teacher ratios have all contributed to inadequate education for low-income students. With many existing solutions not being able to fulfill the needs that students need for quality education, a better solution must be made that allows students from all income levels and all necessities to come together and get the proper education that they need.
 
 
- ### Citations
+### Citations
 Farry, Maggie. “An Old Problem in the New Normal: The Digital Divide.” New America, 6 July 2021, 	https://www.newamerica.org/the-thread/an-old-problem-in-the-new-normal-the-digital-divide/
 
 Guterres, António. “— SDG Indicators.” — SDG Indicators https://unstats.un.org/sdgs/report/2021/
@@ -20,52 +20,58 @@ Skipton, Alice. “Seeking a Path to Educational Justice in Washington State | U
 
  
 
- ## Solution
+## Solution
  
- This web app provides an interactive state map for a quick intuitive path of resources, a rental system for educators to access technology for student educational purposes, and filter systems within the rental platform. These features are to aid low-income students in acquiring the necessary digital resources for a high-quality education through the support of their Washington State  K-12 educators.
+This web app’s main feature is  a community based forum for educators to help each other find technology equipment and other technology resources, such as available scholarships or workshops, for student educational purposes. The overall goal of this platform is to aid low-income students in acquiring the necessary digital resources for a high-quality education through the support of their Washington State  K-12 educators.
 
-### Site Layout
+## Features and Site Layout
 
+### 1) Home Page:
 
-### 1) Washington State Map (Home Page):
+Our landing page will feature a navigation bar at the top to get to different pages, a headline, and a short, one-sentence description about our app. The navbar will have the app’s name, the logo, and the pages that can be accessed are the Home, Forum, and Your Posts (inside the "Account" button as a drop-down). This page will be a simple display where users will only have the interactivity to scroll up and down the page. Under the short site description, there will be an about portion and an FAQ section. The _About_ description will include the purpose and goal of our website. With a photo of a logo. Below this will be the _FAQ_ portion that will include around 10 commonly asked questions that users could go to recieve help.
 
-Our landing page will feature a navigation bar at the top to get to different pages, a headline, and an interactive map of the state of Washington. The navbar pages will have the app’s name, the logo, and the pages that can be accessed are the home, about, and rental pages. The map will contain the name of counties as hyperlinks. Users will not be able to zoom in or out on the map as it will be static. The user will be able to hover over their respective county within the state, allowing them to click on the county and be redirected to that county's resources. From this list of resources, the user can choose to rent the items or not, and filter down the resources some more if they so wish. This provides a quick, intuitive path for educators to quickly access the information they need for their respective location. 
+<img src="diagrams/home.png">
 
-
-<img src="diagrams/Home.jpg">
-
-
-### 2) Rental Systems:
-
-- Equipment list
-- Reserve equipment
-
-Another one of our features will be the student technology rental system. This feature will incorporate an equipment list that allows them to reserve equipment based on their need. We will also include an overview section that explains the process to the students so that they know what is expected of them during their time using the equipment. The page will include a nav bar at the top, a header, search bar underneath the header, filter options on the left screen, and various photos of available equipment. 
-
-<img src="diagrams/Rentals.jpg">
-
-Users will be able to reserve equipment by searching for specific technology at the top search bar, browse by scrolling through the pictures, or simply press the image to find more information. No interaction will be made when users hover over the images. 
-
-Once a user has selected the image for their requested equipment, further descriptions and images can be found. This screen will be where the user reserves the equipment by entering their name, email, and phone number. Once information is filled the user will press the rent button to get a confirmation of their equipment. 
-
-<img src="diagrams/Rental selected.jpg">
-
-Applying this feature as a part of our website will allow families with low-income to have a solution for accessing technology for educational purposes. We intend on giving students a way to access technology that they may have been stripped from due to COVID-19 and we are hoping that the rental system will allow students to gain this access again.
+<img src="diagrams/navbar-dropdown-open.png">
 
 
-### 3) Filter Systems:
+### 2) Forum:
 
-_(Allowing user to search type of resource they need (ex: wifi) and shows availability)_ 
+When a user clicks on the forum option on the navigation bar, they will be redirected to the forum page. The forum page will be a resource forum for users to get in contact with other educators that have certain resources they can give, and users can also post to request resources as well. At the top of the forum page, users will be able to create a post. Underneath the create post box, users can search for keywords to find specifically what they are looking for. The keywords search will be a text input that will search the database for the inputted keyword and display only posts that have the keyword in them. Underneath the search bar will be the posts of the feed. A post will be a box with the user’s profile picture on the top left. The user’s name, location, and post content will be displayed on the right of the profile picture. The user’s name and post title will be in bold. 
 
-We will also have a filter system feature that would allow users to search for a type of resource that they need, like WiFi, and show whether or not that resource is available. By using the filters, the user will be given the list of items that they asked for, and they will be provided with information on how long they can have the resource for. The filters will be inclusive because we want to provide the user with any resource that fits the criteria they searched for. The list of filterable resources include the type of technology, such as laptops, WiFi, tablets, cameras, and microphones. It will also include location that the user can input, which will filter down the available resources to only have those that are available in or near that specific area. And lastly, distance will be a filter as well, in which users can choose to filter down the available resources within a certain distance, such as 1 mile, 2 miles, 5 miles, or 5+ miles. This will allow users to pick how far they want to go to get this resource. There might be a chance that there will be no list items that match all the selected filters, so the system will tell the user this and provide the available items that are in a wider range. For example, if the user asks for a laptop within 1 mile of their location but they are not available, the system will alert the user of this and provide a list of laptops that are within 2, 5, or 5+ miles of the user’s location instead, depending on which distance is closest and has the resources available. 
+Users will also be able to make a post while on the forum page to look for a resource or to inform others that they have a resource. To create a post, users will have to write a title for the post and the post description. This will be a form that users can fill out with both text inputs being a required field. There will be no word limit for the post. Once users have filled out the form, users can click on the “post” button. To validate the form, the app will check that both text inputs have text in them. If users are missing a required field, the app will display a message under the form that tells them if a field is missing. If the form validates successfully and there are no errors, the user’s new post will appear at the top of the feed. If it encounters an error, the error will be displayed in red text under the form to inform the user. 
+
+Additionally, users will be able to type keywords for certain technologies or resources they are looking for in the search bar. Search results (relevant posts) will display under the search bar after the user presses the enter key. The search bar does not search dynamically as the user is typing.
+
+Lastly, users will be able to scroll up and down in the list of all posts in the forum (when on the forum page). Clicking on any area of the post preview within the sectioned lines will send the user to a new page with more details about the post.
+
+<img src="diagrams/forum.png">
 
 
-<img src="diagrams/Rentals (filters applied).jpg">
+
+### 3) Interacting with Forum Posts
+
+After clicking on a post preview on a different page, the user will be able to see a page with the full details of that specific post. This page will display all elements of the post (title, body, author, location, and date) and a comment section. The comment section will have a text field area for the user to type and submit a comment on the post. If the user presses the button to submit a comment and does not type anything into the text field, nothing will be submitted. Under the text field area, the user can scroll through comments made by other users.
+
+<img src="diagrams/fullpost.png">
+
+### 4) User Accounts
+
+In order for users to access and interact in the forum page, an account must be created through our website. If entering the forum page users will be prompted to log-in before viewing. If on the home page, the nav bar will consist of the option to Log-in. The option to log in will also be available on the nav bar in all screens. 
+Users will be prompted to a landing page that prompts the user with two options in buttons:
+
+<img src="diagrams/login.png">
+
+#### Log In and Sign Up:
+
+In order for users to access and interact in the forum page, the user must be signed in to an account. All user accounts are based on their Google account; on the login page, there will be a button to allow the user to log in or sign up with their google account. Upon clicking on the button to continue with google, the user may be sent to an external site to enter their Google account information, but they will be sent to the app’s home page if their login was successful. If entering the forum page from another page without being signed in,  users will be prompted to log-in before viewing. If on the home page, the nav bar will consist of the option to Log-in. The option to log in will also be available on the nav bar in all screens. 
 
 
-### 4) About Page:
+A log out option button will be at the top header nav bar (accessible when hovering over "Account"). 
 
-The about page will be a simple display where users will only have the interactivity to scroll up and down the page. There will be a nav bar, about portion, and FAQ section. The _About_ description will include the purpose and goal of our website. With a photo of a logo. Below this will be the _FAQ_ portion that will include around 10 commonly asked questions that users could go to recieve help.
+#### Seeing posts made by the user:
 
-<img src="diagrams/About.jpg">
+Additionally, users will able to view all posts they have made by clicking the "Your Posts" button in the drop-down menu of the navigation bar. 
+
+<img src="diagrams/yourposts.png">
 
