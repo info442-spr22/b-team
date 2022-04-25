@@ -78,6 +78,11 @@ Tests will be on teams computers first by deploying to the local host. Testers w
 6. Expect the posts to be clickable and redirects to the page with the individual post’s full details and comments (your posts 6)
 
 **Googe Authentication**
+1. Expect to see a sign in button for the user to click.
+2. Button is a google sign in button,  a prompt asking the user to sign in via their google accounts should pop up. 
+3. Users will then be able to see their google accounts and pick which one they want in order to sign in. 
+4. Expect to login into the home/landing page with their desired google account. 
+
 
 ## Defect Management
 If defects are found during testing this bug will be reported to team PM. The PM will notify developers of the bug via github milestones/issues in the comments. Then the PM will divide up the work based on the availability or tasks of developers.
