@@ -45,18 +45,16 @@ Tests will be on teams computers first by deploying to the local host. Testers w
 
 
 **Individual Forum Post**
-1. Expect to see the navigation bar at the top of the page (navigation 1)
-2. Navigation links take the user to the correct pages (navigation 1 c, d, e)
-3. Back button appears on the top left of the page, beside the post and under the navigation bar (individual forum posts 1b)
-4. Back button should be clickable (individual forum posts 1b)
-5. Back button correctly takes the user to their last viewed page (individual forum posts 1b)
-6. All elements of the post should be displayed in the middle of the page in the correct layout (individual forum posts c)
-7. Comment section displays in the correct location under the post (individual form posts 1d)
-8. Comment section contains a text input area at the top (individual form posts 1e)
-9. Comment text input allows the input of no more than 300 characters (individual form posts 1e)
-10. Pressing the “comment” button after typing in the text field will display the text input as a comment at the top of the comment section (individual form posts 1ei)
-11. Expect to see an error message beside the comment text field if the “comment” button is pressed when the text input is empty (individual form posts ieii)
-12. Expect to see comments displayed in the correct chronological order (individual form posts 1f)
+1. Back button appears on the top left of the page, beside the post and under the navigation bar (individual forum posts 1b)
+2. Back button should be clickable (individual forum posts 1b)
+3. Back button correctly takes the user to their last viewed page (individual forum posts 1b)
+4. All elements of the post should be displayed in the middle of the page in the correct layout (individual forum posts c)
+5. Comment section displays in the correct location under the post (individual form posts 1d)
+6. Comment section contains a text input area at the top (individual form posts 1e)
+7. Comment text input allows the input of no more than 300 characters (individual form posts 1e)
+8. Pressing the “comment” button after typing in the text field will display the text input as a comment at the top of the comment section (individual form posts 1ei)
+9. Expect to see an error message beside the comment text field if the “comment” button is pressed when the text input is empty (individual form posts ieii)
+10. Expect to see comments displayed in the correct chronological order (individual form posts 1f)
 
 
 **Deleting Posts/Comments (stretch goal)**
