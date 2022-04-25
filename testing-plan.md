@@ -33,14 +33,56 @@ Tests will be on teams computers first by deploying to the local host. Testers w
     - Your Posts
 
 **Forum Page**
+1. Expect to see the navigation bar at the top of the page and navigation links take the user to the correct pages (navigation 1)
+2. Expect to see text field how up for text entry (forum 1b)
+    - Able to click and type within text box
+3. Expect to see forum component that shows other posts (forum 1e)
+    - Forum should show other posts chronological order
+    - Should allow scrolling through posts
+    - Formatting of posts should be [Post Title | Location | Posted by Author | Date]
+4. Post button shows up and is clickable (forum 1c)
+5. Error message displays if user tries to post with no text (forum 1ci)
+
 
 **Individual Forum Post**
+1. Expect to see the navigation bar at the top of the page (navigation 1)
+2. Navigation links take the user to the correct pages (navigation 1 c, d, e)
+3. Back button appears on the top left of the page, beside the post and under the navigation bar (individual forum posts 1b)
+4. Back button should be clickable (individual forum posts 1b)
+5. Back button correctly takes the user to their last viewed page (individual forum posts 1b)
+6. All elements of the post should be displayed in the middle of the page in the correct layout (individual forum posts c)
+7. Comment section displays in the correct location under the post (individual form posts 1d)
+8. Comment section contains a text input area at the top (individual form posts 1e)
+9. Comment text input allows the input of no more than 300 characters (individual form posts 1e)
+10. Pressing the “comment” button after typing in the text field will display the text input as a comment at the top of the comment section (individual form posts 1ei)
+11. Expect to see an error message beside the comment text field if the “comment” button is pressed when the text input is empty (individual form posts ieii)
+12. Expect to see comments displayed in the correct chronological order (individual form posts 1f)
+
 
 **Deleting Posts/Comments (stretch goal)**
+1. Expect to see the navigation bar at the top of the page and navigation links take the user to the correct pages (navigation 1)
+2. When viewing an individual post, expect to see a “Delete Post” button on the upper right corner of the post’s box that is clickable (deleting posts/comments 2)
+3. Expect to see a confirmation message (“Are you sure you want to delete this post?”) pop-up with two buttons giving the user the options of “Yes” and “Cancel” (deleting posts/comments 3)
+    - Expect to see the post get deleted if user clicks “Yes” button (deleting posts/comments 4)
+    - Expect to see the individual post details again and pop-up to go away if user clicks “Cancel” button (deleting posts/comments 5)
+4. Expect to see a “Delete Comment” button that is clickable on a comment (deleting posts/comments 6)
+5. Expect to only be able to delete a comment when logged in (deleting posts/comments 7)
+6. Expect to see unclickable delete buttons if user is not logged in (deleting posts/comments 8)
 
 **Your Posts (stretch goal)**
+1. Expect to see the navigation bar at the top of the page and navigation links take the user to the correct pages (navigation 1)
+2. Expect to see the page titled “Your Posts” centered under the navigation bar (your posts 2)
+3. Expect to see the user’s account information (name, account) below the title on the left side (your posts 3)
+4. Expect to see previews of the user’s posts displayed in chronological order (newer posts at the top, older posts at the bottom) below the title on the right side (your posts 4)
+5. Expect to be able to scroll up and down the page if the user has a lot of posts (your posts 5)
+6. Expect the posts to be clickable and redirects to the page with the individual post’s full details and comments (your posts 6)
 
-**Googe Autentication**
+**Googe Authentication**
+1. Expect to see a sign in button for the user to click.
+2. Button is a google sign in button,  a prompt asking the user to sign in via their google accounts should pop up. 
+3. Users will then be able to see their google accounts and pick which one they want in order to sign in. 
+4. Expect to login into the home/landing page with their desired google account. 
+
 
 ## Defect Management
 If defects are found during testing this bug will be reported to team PM. The PM will notify developers of the bug via github milestones/issues in the comments. Then the PM will divide up the work based on the availability or tasks of developers.
