@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../logo.png'
+import SignIn from './signin';
 
 
 const Splash = () => {
@@ -11,11 +12,10 @@ const Splash = () => {
             <div>
                 <header>
                     <h1>Better Educators</h1>
+                    <SignIn/>
                 </header>
             </div>
         </div>
     );
 }
-
-
 export default Splash;
