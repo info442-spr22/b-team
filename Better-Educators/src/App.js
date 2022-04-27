@@ -4,6 +4,7 @@ import Splash from './pages/splash';
 import Post from './pages/post';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from 'react'
 
 
 function App() {
