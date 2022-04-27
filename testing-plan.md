@@ -1,7 +1,7 @@
 # Testing Plan
 
 ## Types of Testing Methods
-**Manual testing** will be the main type of testing done
+**Manual acceptance testing** will be the main type of testing done
 
 ## Process
 1. Who will test: 
@@ -33,6 +33,8 @@ Tests will be on teams computers first by deploying to the local host. Testers w
 3. Users will then be able to see their google accounts and pick which one they want in order to sign in. 
 4. After successfull log-in, expect to be redirected to the home/landing page with their desired google account.
 5. The log in/sign up page is the only page that can be accessed by users who are not logged in to their google accounts
+6. There is no nav bar displayed for users who are not signed in
+7. Navigation to other pages through their URL will lead to a error page stating that the user must be logged in to access to the page.
 
 **Home Page (User Logged In)**
 
