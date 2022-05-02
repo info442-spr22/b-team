@@ -9,7 +9,6 @@ const SignIn = () => {
 
     const SignInWithFirebase = () => {
         const provider = new GoogleAuthProvider();
-        const navigate = useNavigate();
         signInWithPopup(auth, provider)
         .then((userInfo) => {
             console.log(userInfo);
