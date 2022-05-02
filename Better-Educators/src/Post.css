@@ -1,0 +1,33 @@
+#comment-section {
+    border: solid 1px black;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#comment-text {
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.form-label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#submit-button {
+    padding: 10px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: 0;
+    font-weight: bold;
+    background-color: #a5be00;
+    border: none;
+}
