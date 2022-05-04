@@ -21,6 +21,10 @@ function Home({ isAuth }) {
     });
     return (
         <div className='homePage'>
+            <header>
+                <img src={logo} className="App-logo" alt="logo">
+                </img>
+            </header>
             {postLists.map((post) => {
                 return <div className='post'>
                     <div className='postHeader'>
