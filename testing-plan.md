@@ -27,7 +27,7 @@ Tests will be on teams computers first by deploying to the local host. Testers w
     - Forum
     - Your Posts
 
-**Home Page/Googe Authentication (User not logged-in)**
+**Log-in/Googe Authentication (User not logged-in)**
 1. When first entering the website or when not logged in as a user, expect to see a sign in button for the user to click.
 2. Button is a google sign in button,  a prompt asking the user to sign in via their google accounts should pop up. 
 3. Users will then be able to see their google accounts and pick which one they want in order to sign in. 
@@ -36,12 +36,9 @@ Tests will be on teams computers first by deploying to the local host. Testers w
 6. There is no nav bar displayed for users who are not signed in
 7. Navigation to other pages through their URL will lead to a error page stating that the user must be logged in to access to the page.
 
-**Home Page (User Logged In)**
+**Home Page/Forum Page (User Logged In)****
 
 1. On visit to home page, expect to see the overall header centered at the top of the page with an image of Washington State directly below.  (home/landing 1)
-2. Expect to see 2 sections below titled “About” with a small description of the product and the “FAQ” portion (home/landing 4-6). 
-
-**Forum Page**
 1. Expect to see the navigation bar at the top of the page and navigation links take the user to the correct pages (navigation 1)
 2. Expect to see text field how up for text entry (forum 1b)
     - Able to click and type within text box
