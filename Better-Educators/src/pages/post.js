@@ -30,10 +30,10 @@ function Post({ isAuth }) {
                 <h1>Create a Post</h1>
                 <div className='inputGp'></div>
                 <label>title:</label>
-                <input placeholder="title.." onChange={(event) => { setTitle(event.target.value) }} />
+                <input placeholder="title.." onChange={(event) => { setTitle(event.target.value) }} required />
                 <div className='inputGp'>
                     <label>Post:</label>
-                    <textarea placeholder="Post.." onChange={(event) => { setPostText(event.target.value) }} />
+                    <textarea placeholder="Post.." onChange={(event) => { setPostText(event.target.value) }} required />
                 </div>
                 <button onClick={createPost}>Submit</button>
 
@@ -43,16 +43,17 @@ function Post({ isAuth }) {
 }
 export default Post;
 
-function Comments() {
-    return (
-        <div id="comment-section">
-            <div id="comment-form">
-                <form method="post" id="comment-form">
-                    <p class="form-label">Comments</p>
-                    <textarea id="comment-text" name="comment-text" placeholder="Write something..."></textarea>
-                    <button type="submit" id="submit-button" name="submit-button">Comment</button>
-                </form>
-            </div>
-        </div>
-    );
-}
+// Use for future sprint
+// function Comments() {
+//     return (
+//         <div id="comment-section">
+//             <div id="comment-form">
+//                 <form method="post" id="comment-form">
+//                     <p class="form-label">Comments</p>
+//                     <textarea id="comment-text" name="comment-text" placeholder="Write something..."></textarea>
+//                     <button type="submit" id="submit-button" name="submit-button">Comment</button>
+//                 </form>
+//             </div>
+//         </div>
+//     );
+// }
