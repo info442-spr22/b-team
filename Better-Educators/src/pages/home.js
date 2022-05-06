@@ -3,12 +3,15 @@ import '../Home.css'
 import logo from '../logo.png'
 import { db, auth } from '../firebase/firebase';
 import { getDocs, collection, deleteDoc, doc } from 'firebase/firestore'
+import { useNavigate } from 'react-router-dom';
+
 
 
 
 function Home({ isAuth }) {
     const [postLists, setPostList] = useState([]);
     const postsCollectionRef = collection(db, "posts")
+    let navigate = useNavigate();
 
 
     useEffect(() => {
@@ -18,12 +21,13 @@ function Home({ isAuth }) {
         };
 
         getPosts();
-    });
+    }, []);
     return (
         <div className='homePage'>
             <header>
                 <img src={logo} className="App-logo" alt="logo">
                 </img>
+                <p> committed to making sure no student gets left behind </p>
             </header>
             {postLists.map((post) => {
                 return <div className='post'>
@@ -34,6 +38,7 @@ function Home({ isAuth }) {
                     </div>
                     <div className='postTextContainer'>{post.postText}</div>
                     <h4>@ {post.author.name}</h4>
+                    <button onClick={navigate('/post')}>more Info</button>
                 </div>
             })}
         </div>

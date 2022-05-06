@@ -26,18 +26,11 @@ This web app’s main feature is  a community based forum for educators to help 
 
 ## Features and Site Layout
 
-### 1) Home Page:
+### 1) Home/Forum Page:
 
-Our landing page will feature a navigation bar at the top to get to different pages, a headline, and a short, one-sentence description about our app. The navbar will have the app’s name, the logo, and the pages that can be accessed are the Home, Forum, and Your Posts (inside the "Account" button as a drop-down). This page will be a simple display where users will only have the interactivity to scroll up and down the page. Under the short site description, there will be an about portion and an FAQ section. The _About_ description will include the purpose and goal of our website. With a photo of a logo. Below this will be the _FAQ_ portion that will include around 10 commonly asked questions that users could go to recieve help.
+Our landing page will feature a navigation bar at the top to get to different pages, a headline, and a short, one-sentence description about our app. The landing page will also be accessible as the forum page only when users are logged in. The navbar will have the app’s name, the logo, and the pages that can be accessed are the Home, Forum, and Your Posts (inside the "Account" button as a drop-down). This page will be a simple display where users will only have the interactivity to scroll up and down the page. 
 
-<img src="diagrams/home.png">
-
-<img src="diagrams/navbar-dropdown-open.png">
-
-
-### 2) Forum:
-
-When a user clicks on the forum option on the navigation bar, they will be redirected to the forum page. The forum page will be a resource forum for users to get in contact with other educators that have certain resources they can give, and users can also post to request resources as well. At the top of the forum page, users will be able to create a post. Underneath the create post box, users can search for keywords to find specifically what they are looking for. The keywords search will be a text input that will search the database for the inputted keyword and display only posts that have the keyword in them. Underneath the search bar will be the posts of the feed. A post will be a box with the user’s profile picture on the top left. The user’s name, location, and post content will be displayed on the right of the profile picture. The user’s name and post title will be in bold. 
+When users are logged in the following forum page will be present. The forum page will be a resource forum for users to get in contact with other educators that have certain resources they can give, and users can also post to request resources as well. At the top of the forum page, users will be able to create a post. Underneath the create post box, users can search for keywords to find specifically what they are looking for. The keywords search will be a text input that will search the database for the inputted keyword and display only posts that have the keyword in them. Underneath the search bar will be the posts of the feed. A post will be a box with the user’s profile picture on the top left. The user’s name, location, and post content will be displayed on the right of the profile picture. The user’s name and post title will be in bold. 
 
 Users will also be able to make a post while on the forum page to look for a resource or to inform others that they have a resource. To create a post, users will have to write a title for the post and the post description. This will be a form that users can fill out with both text inputs being a required field. There will be no word limit for the post. Once users have filled out the form, users can click on the “post” button. To validate the form, the app will check that both text inputs have text in them. If users are missing a required field, the app will display a message under the form that tells them if a field is missing. If the form validates successfully and there are no errors, the user’s new post will appear at the top of the feed. If it encounters an error, the error will be displayed in red text under the form to inform the user. 
 
@@ -45,31 +38,35 @@ Additionally, users will be able to type keywords for certain technologies or re
 
 Lastly, users will be able to scroll up and down in the list of all posts in the forum (when on the forum page). Clicking on any area of the post preview within the sectioned lines will send the user to a new page with more details about the post.
 
+<img src="diagrams/home.png">
+
+<img src="diagrams/navbar-dropdown-open.png">
+
 <img src="diagrams/forum.png">
 
 
 
-### 3) Interacting with Forum Posts
+### 2) Interacting with Forum Posts
 
 After clicking on a post preview on a different page, the user will be able to see a page with the full details of that specific post. This page will display all elements of the post (title, body, author, location, and date) and a comment section. The comment section will have a text field area for the user to type and submit a comment on the post. If the user presses the button to submit a comment and does not type anything into the text field, nothing will be submitted. Under the text field area, the user can scroll through comments made by other users.
 
 <img src="diagrams/fullpost.png">
 
-### 4) User Accounts
+### 3) User Accounts
 
 In order for users to access and interact in the forum page, an account must be created through our website. If entering the forum page users will be prompted to log-in before viewing. If on the home page, the nav bar will consist of the option to Log-in. The option to log in will also be available on the nav bar in all screens. 
 Users will be prompted to a landing page that prompts the user with two options in buttons:
 
 <img src="diagrams/login.png">
 
-#### Log In and Sign Up:
+#### 4) Log In and Sign Up:
 
 In order for users to access and interact in the forum page, the user must be signed in to an account. All user accounts are based on their Google account; on the login page, there will be a button to allow the user to log in or sign up with their google account. Upon clicking on the button to continue with google, the user may be sent to an external site to enter their Google account information, but they will be sent to the app’s home page if their login was successful. If entering the forum page from another page without being signed in,  users will be prompted to log-in before viewing. If on the home page, the nav bar will consist of the option to Log-in. The option to log in will also be available on the nav bar in all screens. 
 
 
 A log out option button will be at the top header nav bar (accessible when hovering over "Account"). 
 
-#### Seeing posts made by the user:
+#### 5) Seeing posts made by the user:
 
 Additionally, users will able to view all posts they have made by clicking the "Your Posts" button in the drop-down menu of the navigation bar. 
 
