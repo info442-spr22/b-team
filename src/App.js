@@ -1,5 +1,4 @@
 import Home from './pages/home';
-import Forum from './pages/forum';
 import Post from './pages/post';
 import Login from './pages/login';
 import { auth } from './firebase/firebase';
@@ -40,7 +39,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home isAuth={isAuth}/>} />
             <Route path="/home" element={<Home isAuth={isAuth}/>} />
-            <Route path="/forum" element={<Forum />} />
             <Route path="/post" element={<Post isAuth={isAuth} />} />
             <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
           </Routes>
