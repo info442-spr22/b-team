@@ -29,7 +29,7 @@ function Post({ isAuth }) {
             <div className='cpContainer'>
                 <h1>Create a Post</h1>
                 <div className='inputGp'></div>
-                <label>title:</label>
+                <label>Title:</label>
                 <input placeholder="title.." onChange={(event) => { setTitle(event.target.value) }} required />
                 <div className='inputGp'>
                     <label>Post:</label>

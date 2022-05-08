@@ -27,7 +27,7 @@ function Home({ isAuth }) {
             <header>
                 <img src={logo} className="App-logo" alt="logo">
                 </img>
-                <p> committed to making sure no student gets left behind </p>
+                <p> Committed to making sure no student gets left behind </p>
             </header>
             {isAuth && postLists.map((post) => {
                 return <div className='post' key={post.id}>
