@@ -5,15 +5,12 @@ import { db, auth } from '../firebase/firebase';
 import { getDocs, collection, deleteDoc, doc } from 'firebase/firestore'
 import { useNavigate } from 'react-router-dom';
 
-
-
-
 function Home({ isAuth }) {
     const [postLists, setPostList] = useState([]);
     const postsCollectionRef = collection(db, "posts")
     let navigate = useNavigate();
 
-
+    console.log(postLists);
     useEffect(() => {
         const getPosts = async () => {
             const data = await getDocs(postsCollectionRef);
@@ -30,7 +27,7 @@ function Home({ isAuth }) {
                 <p> committed to making sure no student gets left behind </p>
             </header>
             {postLists.map((post) => {
-                return <div className='post'>
+                return <div className='post' key={post.id}>
                     <div className='postHeader'>
                         <div className='title'>
                             <h1>{post.title}</h1>
@@ -38,7 +35,7 @@ function Home({ isAuth }) {
                     </div>
                     <div className='postTextContainer'>{post.postText}</div>
                     <h4>@ {post.author.name}</h4>
-                    <button onClick={navigate('/post')}>more Info</button>
+                    {/* <button onClick={navigate('/post')}>more Info</button> */}
                 </div>
             })}
         </div>
