@@ -30,10 +30,10 @@ function Post({ isAuth }) {
                 <h1>Create a Post</h1>
                 <div className='inputGp'></div>
                 <label>Title:</label>
-                <input placeholder="title.." onChange={(event) => { setTitle(event.target.value) }} required />
+                <input placeholder="Title..." onChange={(event) => { setTitle(event.target.value) }} required />
                 <div className='inputGp'>
                     <label>Post:</label>
-                    <textarea placeholder="Post.." onChange={(event) => { setPostText(event.target.value) }} required />
+                    <textarea placeholder="Post..." onChange={(event) => { setPostText(event.target.value) }} required />
                 </div>
                 <button onClick={createPost}>Submit</button>
 
