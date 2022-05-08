@@ -10,11 +10,14 @@ function Home({ isAuth }) {
     const postsCollectionRef = collection(db, "posts")
     let navigate = useNavigate();
 
-    console.log(postLists);
     useEffect(() => {
         const getPosts = async () => {
             const data = await getDocs(postsCollectionRef);
-            setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+            const dataValues = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+            let sorted = dataValues.sort((a, b) => {
+                return(b.date - a.date);
+            });
+            setPostList(sorted);
         };
 
         getPosts();
@@ -26,7 +29,7 @@ function Home({ isAuth }) {
                 </img>
                 <p> committed to making sure no student gets left behind </p>
             </header>
-            {postLists.map((post) => {
+            {isAuth && postLists.map((post) => {
                 return <div className='post' key={post.id}>
                     <div className='postHeader'>
                         <div className='title'>

@@ -14,7 +14,7 @@ function Post({ isAuth }) {
     
     const createPost = async () => {
         await addDoc(postsCollectionRef, {
-            title, postText, author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
+            title, date: Date.now(), postText, author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
         });
         navigate('/home')
     };
