@@ -3,7 +3,7 @@ This document defines all requirements for the product. It will be used as a bas
 
 There are two types of requirements: core (those the team commits to meeting during development) and stretch (those the team would like to complete, but cannot commit to). Stretch goals are clearly labeled.
 
-# General 
+## General 
 Every page in the site includes a navigation bar with links to all pages:
 <br />
 > Note: If a user isn't logged in, they will only see the `Login` option on the navigation page
@@ -11,7 +11,7 @@ Every page in the site includes a navigation bar with links to all pages:
 - Create Post 
 - Log out button which will logout the user
 
-# Navigation Bar
+## Navigation Bar
 1. When a user is not logged in the option the following Navigation bar contains:
     - "Login" as a navigation button 
 2. When a user is logged in the following Navigation bar contains (from left to right): 
@@ -20,7 +20,7 @@ Every page in the site includes a navigation bar with links to all pages:
     - "Home" as a navigation button
     - "Create Post" as a navigation button
     - "Logout" as a navigation button
-# Home/Landing Page
+## Home/Landing Page
 1. When users are not logged in the home page, it will contain the following:
     - A divided page of two sections
     - Our logo and product title
@@ -31,21 +31,21 @@ Every page in the site includes a navigation bar with links to all pages:
     - previous posts from other users
  > Note: User will be able to scroll through and view all past posts
 
-# Home Option 2 (Stretch Goal): 
+## Home Option 2 (Stretch Goal): 
 ### Interactive Washington State Map
 > Example diagram:  https://www.nytimes.com/interactive/2021/us/washington-covid-cases.html
 1. The interactive map will allow users to hover and click their choice of county
 2. Once county of choice is clicked a popup appears including the resource link and county name (interactive map)
 3. When users click on their county of choice, they will be redirected to its respective resource page (external from our site)
 
-# Your Posts Page (Stretch Goal):
+## Your Posts Page (Stretch Goal):
 1. Title of the page (“Your Posts”) is centered at the top of the page
 2. Below the title on the left side, the user’s account information is displayed (name, username)
 3. Below the title on the right side, previews of the user’s posts are displayed in chronological order (older posts towards the bottom, newer posts towards the top)
 4. If the user has a large amount of posts, they will be able to scroll up and down on the page to view them
 5. Clicking on the post previews (any area within the sectioned lines) will redirect the user to a page with the post’s full details and comments
 
-# Forum/Home Page
+## Forum/Home Page
 1. Users will be able to access the forum while on the `Home` navigation tab after logging in
 2. The forum page will include:
     - Navigation bar at the tope of the page
@@ -60,7 +60,7 @@ Every page in the site includes a navigation bar with links to all pages:
     - Clicking on the individual post within the post boundaries will redirect the user to a page with further details about that post
     - **(Stretch goal):** Forum will have a search bar above the forum posts to allow users to find posts with certain keywords
 
-# Individual Forum Posts
+## Individual Forum Posts
 
 1. Users can access the full page for an individual post upon clicking forum post previews from the “Forum” page and the “Your Posts” page
 2. Individual Forum Post page will include:
@@ -75,7 +75,7 @@ Every page in the site includes a navigation bar with links to all pages:
         - An error message beside the text field will display if the user presses the “comment” button when the text field is empty
     - Under comment text field, past comments from the user and other users display in chronological order (new posts towards the top, older posts towards the bottom)
 
-# Deleting Posts/Comments (Stretch goal):
+## Deleting Posts/Comments (Stretch goal):
 1. Contains a navigation bar at the top of the page
 1. When pressed into the view of the post, button that has “delete posts” on the upper right corner of the post box
 1. Once button has been clicked a confirmation message will pop up “Are you sure you want to delete post” with two buttons giving the option of yes or cancel
@@ -85,7 +85,7 @@ Every page in the site includes a navigation bar with links to all pages:
 1. The user can only delete posts/comments when logged in
 1. If the user is not logged in, delete buttons on the posts/comments will be static.
 
-# Google Authentication/Login 
+## Google Authentication/Login 
 1. At the home page when not logged in users will select the login button at the top of the nav bar and be redirected to a page that includes “Sign in with google” 
 2. Users will be prompted to login with their google accounts
 3. Page will have a google sign in button that is used to automatically rendered sign-in button
