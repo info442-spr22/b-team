@@ -30,14 +30,14 @@ function Home({ isAuth }) {
                 <p> Committed to making sure no student gets left behind </p>
             </header>
             {isAuth && postLists.map((post) => {
-                return <div className='post' key={post.id}>
+                return <div className='post' key={post.id} id={post.id}>
                     <div className='postHeader'>
                         <div className='title'>
                             <h1>{post.title}</h1>
                         </div>
                     </div>
                     <div className='postTextContainer'>{post.postText}</div>
-                    <h4>@ {post.author.name}</h4>
+                    <h4><pre>@ {post.author.name}   {new Date(post.date).toLocaleString()}   {post.location}</pre></h4>
                     {/* <button onClick={navigate('/post')}>more Info</button> */}
                 </div>
             })}
@@ -45,3 +45,14 @@ function Home({ isAuth }) {
     );
 }
 export default Home;
+
+// function ViewPost() {
+//     let base = "/post/";
+//     let id = this.id;
+//     let post = base + id;
+//     document.querySelectorAll(".post").forEach(element => {
+//         element.addEventListener("click", function() {
+//             navigate(ViewPost);
+//         });
+//     });
+// }

@@ -8,13 +8,14 @@ import { useNavigate } from 'react-router-dom';
 function Post({ isAuth }) {
     const [title, setTitle] = useState('');
     const [postText, setPostText] = useState('');
+    const [location, setLocation] = useState('');
 
     const postsCollectionRef = collection(db, "posts")
     let navigate = useNavigate();
     
     const createPost = async () => {
         await addDoc(postsCollectionRef, {
-            title, date: Date.now(), postText, author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
+            title, date: Date.now(), location, postText, author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
         });
         navigate('/home')
     };
@@ -35,6 +36,8 @@ function Post({ isAuth }) {
                     <label>Post:</label>
                     <textarea placeholder="Post..." onChange={(event) => { setPostText(event.target.value) }} required />
                 </div>
+                <label>Location:</label>
+                <input placeholder="Location..." onChange={(event) => { setLocation(event.target.value) }} />
                 <button onClick={createPost}>Submit</button>
 
             </div>
