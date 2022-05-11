@@ -1,5 +1,5 @@
 import Home from './pages/home';
-import Forum from './pages/forum';
+import IndividualPost from './pages/individual';
 import Post from './pages/post';
 import Login from './pages/login';
 import { auth } from './firebase/firebase';
@@ -24,11 +24,11 @@ function App() {
     <Router>
       <nav>
         {!isAuth ? (
-          <Link to="/login"> Login </Link>
+          <Link to="/login">Login</Link>
         ) : (
           <>
-            <Link to="/home">Home </Link>
-            <Link to="/post">Create Post </Link>
+            <Link to="/home">Home</Link>
+            <Link to="/post">Create Post</Link>
             <button onClick={signUserOut}>Log out</button>
           </>
         )}
@@ -39,6 +39,7 @@ function App() {
             <Route path="/" element={<Home isAuth={isAuth}/>} />
             <Route path="/home" element={<Home isAuth={isAuth}/>} />
             <Route path="/post" element={<Post isAuth={isAuth} />} />
+            <Route path="/post/:postId" element={<IndividualPost isAuth={isAuth} />}/>
             <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
           </Routes>
         </div>
