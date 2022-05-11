@@ -7,7 +7,8 @@ import Comments from './comments';
 
 
 function IndividualPost({ isAuth }) {
-    const [post, getPostInfo] = useState([]);
+    const [post, setPostInfo] = useState([]);
+    const [name, setName] = useState("");
     let postId = useParams().postId;
     const postRef = doc(db, "posts", postId);
     let navigate = useNavigate();
@@ -18,7 +19,10 @@ function IndividualPost({ isAuth }) {
         const getPost = async () => {
             const data = await getDoc(postRef);
             let info = data.data();
-            getPostInfo(info);
+            setPostInfo(info);
+            console.log(info)
+            setName(info.author.name)
+            console.log(name)
         }
         getPost();
     }, []);
@@ -34,6 +38,7 @@ function IndividualPost({ isAuth }) {
                         </div>
                         <div className='ip-author'>
                             <h4><pre>{new Date(post.date).toLocaleString()}</pre></h4>
+                            <p>{name}</p>
                         </div>
                     </div>
                     <div className='ip-postTextContainer'>{post.postText}</div>
