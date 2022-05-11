@@ -3,6 +3,7 @@ import '../Individual.css';
 import { doc, getDoc, collection } from 'firebase/firestore'
 import { db, auth, firestore } from '../firebase/firebase';
 import { useNavigate, useParams } from 'react-router-dom';
+import Comments from './comments';
 
 
 function IndividualPost({ isAuth }) {
@@ -22,20 +23,24 @@ function IndividualPost({ isAuth }) {
         getPost();
     }, []);
 
-
-    return (
-        <div className="individualPage">
-            <div className="ipContainer">
-                <h1>Individual Post Title</h1>
+    if (isAuth && post) {
+        return (
+            <div className="individualPage">
+                <div className='ip-post' key={post.id} id={post.id}>
+                    <div className='ip-postHeader'>
+                        <div className='ip-title'>
+                            <h1>{post.title}</h1>
+                            <h4><pre>{post.location}</pre></h4>
+                        </div>
+                        <div className='ip-author'>
+                            <h4><pre>{new Date(post.date).toLocaleString()}</pre></h4>
+                        </div>
+                    </div>
+                    <div className='ip-postTextContainer'>{post.postText}</div>
+                </div>
+                <Comments />
             </div>
-        </div>
-    );
-    // const postSnap = await getDoc(postRef);
-
-    // if (postSnap.exists()) {
-    //     console.log(postSnap.data());
-    // } else {
-    //     console.log("None");
-    // }
+        );
+    }
 }
 export default IndividualPost;
