@@ -3,7 +3,7 @@ import '../Home.css'
 import logo from '../logo.png'
 import { db, auth } from '../firebase/firebase';
 import { getDocs, collection, deleteDoc, doc } from 'firebase/firestore'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function Home({ isAuth }) {
     const [postLists, setPostList] = useState([]);
@@ -38,7 +38,7 @@ function Home({ isAuth }) {
                     </div>
                     <div className='postTextContainer'>{post.postText}</div>
                     <h4><pre>@ {post.author.name}   {new Date(post.date).toLocaleString()}   {post.location}</pre></h4>
-                    {/* <button onClick={navigate('/post')}>more Info</button> */}
+                    <button><Link to={"/post/" + post.id}>More Info</Link></button>
                 </div>
             })}
         </div>
