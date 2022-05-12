@@ -10,8 +10,10 @@ function IndividualPost({ isAuth }) {
     const [post, setPostInfo] = useState([]);
     const [name, setName] = useState("");
     let postId = useParams().postId;
+
     const postRef = doc(db, "posts", postId);
     let navigate = useNavigate();
+
     useEffect(() => {
         if (!isAuth) {
             navigate('/login');
@@ -20,9 +22,7 @@ function IndividualPost({ isAuth }) {
             const data = await getDoc(postRef);
             let info = data.data();
             setPostInfo(info);
-            console.log(info)
-            setName(info.author.name)
-            console.log(name)
+            setName(info.author.name);
         }
         getPost();
     }, []);
@@ -37,8 +37,7 @@ function IndividualPost({ isAuth }) {
                             <h4><pre>{post.location}</pre></h4>
                         </div>
                         <div className='ip-author'>
-                            <h4><pre>{new Date(post.date).toLocaleString()}</pre></h4>
-                            <p>{name}</p>
+                            <h4><pre>{name}  |  {new Date(post.date).toLocaleString()}</pre></h4>
                         </div>
                     </div>
                     <div className='ip-postTextContainer'>{post.postText}</div>

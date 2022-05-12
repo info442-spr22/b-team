@@ -45,14 +45,3 @@ function Home({ isAuth }) {
     );
 }
 export default Home;
-
-// function ViewPost() {
-//     let base = "/post/";
-//     let id = this.id;
-//     let post = base + id;
-//     document.querySelectorAll(".post").forEach(element => {
-//         element.addEventListener("click", function() {
-//             navigate(ViewPost);
-//         });
-//     });
-// }
