@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from 'react';
 import '../Individual.css';
-import { doc, getDocs, collection, addDoc } from 'firebase/firestore'
-import { db, auth, firestore } from '../firebase/firebase';
+import { doc, getDocs, collection, addDoc, deleteDoc } from 'firebase/firestore'
+import { db, auth } from '../firebase/firebase';
 import { useNavigate, useParams } from 'react-router-dom';
 
 function Comments({ isAuth }) {
@@ -15,7 +15,7 @@ function Comments({ isAuth }) {
         await addDoc(commentsCollectionRef, {
             commentText, date: Date.now(), author: { name: auth.currentUser.displayName, id: auth.currentUser.uid }
         });
-        navigate('/post/' + postId);
+        navigate(0); // This refreshes the page but there's an issue with our authentication. See comment below.
     };
 
     return (
@@ -57,7 +57,28 @@ function PastComments(props) {
                 <p className='comment-author'>{comment.author.name}</p>
                 <p className='comment-text'>{comment.commentText}</p>
                 <h5 className='comment-date'>{new Date(comment.date).toLocaleString()}</h5>
+
+                <DeleteComment props={{ postId: props.props, commentId: comment.id}}/>
             </div>
         )
     }));
+}
+
+function DeleteComment(props) {
+    let navigate = useNavigate();
+    const commentRef = doc(db, "posts", props.props.postId, "comments", props.props.commentId);
+    const commentDelete = async () => {
+        await deleteDoc(commentRef);
+        navigate(0); // This refreshes the page but there are issues:
+        /*
+            When it refreshes the page, it automatically logs the user out.
+            The comment deleting itself works, but because it logs the user out upon refreshing,
+            they won't be able to see the update until after they log in.
+            In other words, we need to make it so that upon refreshing, users will not get logged out
+            of their session.
+        */
+    }
+    return (
+        <button onClick={commentDelete}>Delete Comment</button>
+    )
 }
