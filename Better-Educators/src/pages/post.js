@@ -3,6 +3,7 @@ import '../Post.css'
 import { addDoc, collection } from 'firebase/firestore'
 import { db, auth } from '../firebase/firebase';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Post({ isAuth }) {
@@ -12,7 +13,7 @@ function Post({ isAuth }) {
 
     const postsCollectionRef = collection(db, "posts")
     let navigate = useNavigate();
-    
+
     const createPost = async () => {
         await addDoc(postsCollectionRef, {
             title, date: Date.now(), location, postText, author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
@@ -28,6 +29,11 @@ function Post({ isAuth }) {
     return (
         <div className='createPostPage'>
             <div className='cpContainer'>
+                <div className="backButton">
+                    <button className='goBack'>
+                        <Link to={-1}>Back</Link>
+                    </button>
+                </div>
                 <h1>Create a Post</h1>
                 <div className='inputGp'></div>
                 <label>Title:</label>
