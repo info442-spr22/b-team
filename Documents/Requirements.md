@@ -12,14 +12,14 @@ There are two types of requirements: core (those the team commits to meeting dur
 - Log out button which will logout the user
 
 ## Navigation Bar
-1. When a user is not logged in the option the following Navigation bar contains:
-    - "Login" as a navigation button 
+1. `Complete #40` When a user is not logged in the option the following Navigation bar contains:
+    - `Complete #40` "Login" as a navigation button 
 2. `Complete #40` When a user is logged in the following Navigation bar contains (from left to right): 
     - `incomplete` An image of the app logo 
     - `incomplete`Name of the app
-    - "Home" as a navigation button
-    - "Create Post" as a navigation button
-    - "Logout" as a navigation button
+    - `Complete #40`"Home" as a navigation button
+    - `Complete #40`"Create Post" as a navigation button
+    - `Complete #40`"Logout" as a navigation button
     
 ## Home/Landing Page
 1.`complete #33` When users are not logged in the home page, it will contain the following:
