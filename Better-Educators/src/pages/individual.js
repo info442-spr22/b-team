@@ -60,15 +60,15 @@ function DeletePost(props) {
     let navigate = useNavigate();
     const postRef = doc(db, "posts", props.props.postId);
     const postDelete = async () => {
-        await deleteDoc(postRef);
-        navigate(0); // This refreshes the page but there are issues:
-        /*
-            When it refreshes the page, it automatically logs the user out.
-            The comment deleting itself works, but because it logs the user out upon refreshing,
-            they won't be able to see the update until after they log in.
-            In other words, we need to make it so that upon refreshing, users will not get logged out
-            of their session.
-        */
+        let text = "Are you sure you want to delete the post?";
+        if (window.confirm(text) == true) {
+            text = "You pressed OK!";
+            await deleteDoc(postRef);
+            navigate('/home');
+        } else {
+            text = "You canceled!";
+            navigate('/home')
+        }
     }
     return (
         <button onClick={postDelete}>Delete Post</button>
