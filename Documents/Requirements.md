@@ -4,7 +4,7 @@ This document defines all requirements for the product. It will be used as a bas
 There are two types of requirements: core (those the team commits to meeting during development) and stretch (those the team would like to complete, but cannot commit to). Stretch goals are clearly labeled.
 
 ## General 
-Every page in the site includes a navigation bar with links to all pages:
+`complete #40` Every page in the site includes a navigation bar with links to all pages:
 <br />
 > Note: If a user isn't logged in, they will only see the `Login` option on the navigation page
 - Home
@@ -14,22 +14,23 @@ Every page in the site includes a navigation bar with links to all pages:
 ## Navigation Bar
 1. When a user is not logged in the option the following Navigation bar contains:
     - "Login" as a navigation button 
-2. When a user is logged in the following Navigation bar contains (from left to right): 
-    - An image of the app logo 
-    - Name of the app
+2. `Complete #40` When a user is logged in the following Navigation bar contains (from left to right): 
+    - `incomplete` An image of the app logo 
+    - `incomplete`Name of the app
     - "Home" as a navigation button
     - "Create Post" as a navigation button
     - "Logout" as a navigation button
+    
 ## Home/Landing Page
-1. When users are not logged in the home page, it will contain the following:
+1.`complete #33` When users are not logged in the home page, it will contain the following:
     - A divided page of two sections
-    - Our logo and product title
+    - Our logo and product title 
     - Below in a paragraph is the slogan and a short description of our application
-2. If a user is logged in, the page has three sections
+2. `complete #32`If a user is logged in, the page has three sections
     - Better Educators logo
     - slogan and paragraph with description of application
     - previous posts from other users
- > Note: User will be able to scroll through and view all past posts
+ > Note: `complete #32` User will be able to scroll through and view all past posts
 
 ## Home Option 2 (Stretch Goal): 
 ### Interactive Washington State Map
@@ -96,7 +97,7 @@ Every page in the site includes a navigation bar with links to all pages:
 ## Reliability 
 Keeping links/resources up to date through a comment form for the resource page. If a resource provided is out of date/no longer active than a comment form could be submitted
 
-1. Contains a report button on the home page and pages for individual rentals
+1. Contains a report button on the home page and pages for individual posts
 2. Report button opens a pop-up
 3. Report-pop up contains check-boxes/radio buttons to select the type of issue the resource is being faced with. Issues include:
     - Invalid link
