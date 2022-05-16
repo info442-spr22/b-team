@@ -45,6 +45,7 @@ function Post({ isAuth }) {
                 <label>Location:</label>
                 <input placeholder="Location..." onChange={(event) => { setLocation(event.target.value) }} />
                 <button onClick={createPost}>Submit</button>
+
             </div>
         </div>
     );
