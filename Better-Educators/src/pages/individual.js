@@ -2,8 +2,9 @@ import { React, useState, useEffect } from 'react';
 import '../Individual.css';
 import { doc, getDoc, collection } from 'firebase/firestore'
 import { db, auth, firestore } from '../firebase/firebase';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import Comments from './comments';
+import { Link } from 'react-router-dom';
 
 
 function IndividualPost({ isAuth }) {
@@ -31,6 +32,11 @@ function IndividualPost({ isAuth }) {
         return (
             <div className="individualPage">
                 <div className='ip-post' key={post.id} id={post.id}>
+                    <div className="backButton">
+                        <button>
+                            <Link to={-1}>Back</Link>
+                        </button>
+                    </div>
                     <div className='ip-postHeader'>
                         <div className='ip-title'>
                             <h1>{post.title}</h1>
