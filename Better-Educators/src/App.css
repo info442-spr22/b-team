@@ -60,3 +60,19 @@ button {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 768px) { 
+  .App-header button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  nav {
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+
+}
