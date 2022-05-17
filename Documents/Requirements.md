@@ -47,50 +47,50 @@ There are two types of requirements: core (those the team commits to meeting dur
 5. Clicking on the post previews (any area within the sectioned lines) will redirect the user to a page with the post’s full details and comments
 
 ## Forum/Home Page
-1. Users will be able to access the forum while on the `Home` navigation tab after logging in
-2. The forum page will include:
-    - Navigation bar at the tope of the page
-    - When a user is at the top of the page, they can scroll to view past posts
-    - Forum will be organized by date with the earliest being at the top of the page
-    - Forum will show multiple posts from the users
-    - Forum format will be as follows: 
+1. `complete #30` Users will be able to access the forum while on the `Home` navigation tab after logging in
+2. `complete #32` The forum page will include:
+    - `complete #40` Navigation bar at the tope of the page
+    - `complete #32` When a user is at the top of the page, they can scroll to view past posts
+    - `complete #32` Forum will be organized by date with the earliest being at the top of the page
+    - `complete #32` Forum will show multiple posts from the users
+    - `complete #32` Forum format will be as follows: 
        - Post Title
        - Post Body
        - Author of the post
-    - Forum page will be in one section, with the main forum component centered in the screen
-    - Clicking on the individual post within the post boundaries will redirect the user to a page with further details about that post
+    - `complete #32` Forum page will be in one section, with the main forum component centered in the screen
+    - `complete #52` Clicking on the individual post within the post boundaries will redirect the user to a page with further details about that post
     - **(Stretch goal):** Forum will have a search bar above the forum posts to allow users to find posts with certain keywords
 
 ## Individual Forum Posts
 
-1. Users can access the full page for an individual post upon clicking forum post previews from the “Forum” page and the “Your Posts” page
+1. `complete #52` Users can access the full page for an individual post upon clicking forum post previews from the “Forum” page and the “Your Posts” page
 2. Individual Forum Post page will include:
-    - A navigation bar at the top of the page
-    - A back button on the top left of the page to navigate back to the page they were previously viewing
-    - The post of interest in the middle of the page
-        - The post will display the title, location, author, and date in the top section of the post area
-        - The bottom of the post area will display the post’s body text
-    - Under the post, there is a comment section
-    - Inside the comment section, at the very top, there is a text field for the user to type a comment
-        - Below the text field, there is a button labeled ‘Comment” that the user can click to submit their comment
-        - An error message beside the text field will display if the user presses the “comment” button when the text field is empty
-    - Under comment text field, past comments from the user and other users display in chronological order (new posts towards the top, older posts towards the bottom)
+    - `complete #40` A navigation bar at the top of the page
+    - `complete #63` A back button on the top left of the page to navigate back to the page they were previously viewing
+    - `complete #53` The post of interest in the middle of the page
+        - `complete #53` The post will display the title, location, author, and date in the top section of the post area
+        - `complete #53` The bottom of the post area will display the post’s body text
+    - `complete #53` Under the post, there is a comment section
+    - `complete #53` Inside the comment section, at the very top, there is a text field for the user to type a comment
+        - `complete #53` Below the text field, there is a button labeled ‘Comment” that the user can click to submit their comment
+        - `complete #69` An error message beside the text field will display if the user presses the “comment” button when the text field is empty
+    - `complete #54` Under comment text field, past comments from the user and other users display in chronological order (new posts towards the top, older posts towards the bottom)
 
 ## Deleting Posts/Comments (Stretch goal):
-1. Contains a navigation bar at the top of the page
-1. When pressed into the view of the post, button that has “delete posts” on the upper right corner of the post box
-1. Once button has been clicked a confirmation message will pop up “Are you sure you want to delete post” with two buttons giving the option of yes or cancel
-1. If a user selects yes, the post will be deleted permanently
-1. If a user selects cancel, the screen will be back to the post view.
-1. If a user wants to delete a comment, a button with text “delete comment” must be prompted or clicked on to delete comment
-1. The user can only delete posts/comments when logged in
-1. If the user is not logged in, delete buttons on the posts/comments will be static.
+1. `complete #40` Contains a navigation bar at the top of the page
+1. `complete #66` When pressed into the view of the post, button that has “delete posts” on the upper right corner of the post box
+1. `complete #68` Once button has been clicked a confirmation message will pop up “Are you sure you want to delete post” with two buttons giving the option of yes or cancel
+1. `complete #68` If a user selects yes, the post will be deleted permanently
+1. `complete #68` If a user selects cancel, the screen will be back to the post view.
+1. `complete #68` If a user wants to delete a comment, a button with text “delete comment” must be prompted or clicked on to delete comment
+1. `complete #68` The user can only delete posts/comments when logged in
+1. `complete #68` If the user is not logged in, delete buttons on the posts/comments will be static.
 
 ## Google Authentication/Login 
-1. At the home page when not logged in users will select the login button at the top of the nav bar and be redirected to a page that includes “Sign in with google” 
-2. Users will be prompted to login with their google accounts
-3. Page will have a google sign in button that is used to automatically rendered sign-in button
-4. Once clicked the user will be prompted with a popup window asking which of their google accounts they will be logging in with.
+1. `complete #30` At the home page when not logged in users will select the login button at the top of the nav bar and be redirected to a page that includes “Sign in with google” 
+2. `complete #30` Users will be prompted to login with their google accounts
+3. `complete #30` Page will have a google sign in button that is used to automatically rendered sign-in button
+4. `complete #30` Once clicked the user will be prompted with a popup window asking which of their google accounts they will be logging in with.
 
 # Non-Functional Requirements
 
