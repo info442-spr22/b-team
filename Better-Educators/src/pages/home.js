@@ -1,9 +1,10 @@
 import { React, useState, useEffect } from 'react';
 import '../Home.css'
 import logo from '../logo.png'
-import { db, auth } from '../firebase/firebase';
+import { db } from '../firebase/firebase';
 import { getDocs, collection, deleteDoc, doc } from 'firebase/firestore'
 import { useNavigate, Link } from 'react-router-dom';
+import { Container } from '../components/container';
 
 function Home({ isAuth }) {
     const [postLists, setPostList] = useState([]);
@@ -22,6 +23,23 @@ function Home({ isAuth }) {
 
         getPosts();
     }, []);
+
+
+    const triggerText = 'Report Post';
+    const onSubmit = (event) => {
+        event.preventDefault(event);
+        console.log(event.target.name.value)
+        console.log(event.target.email.value)
+        console.log(event.target.school.value)
+        console.log(event.target.resource.value)
+        console.log(event.target.description.value)
+
+        
+    };
+
+
+
+
     return (
         <div className='homePage'>
             <header>
@@ -38,7 +56,8 @@ function Home({ isAuth }) {
                     </div>
                     <div className='postTextContainer'>{post.postText}</div>
                     <h4><pre>@ {post.author.name}   {new Date(post.date).toLocaleString()}   {post.location}</pre></h4>
-                    <button><Link to={"/post/" + post.id}>More Info</Link></button>
+                    <button id='weird-button'><Link to={"/post/" + post.id}>More Info</Link></button>
+                    <Container triggerText={triggerText} onSubmit={onSubmit}/>
                 </div>
             })}
         </div>

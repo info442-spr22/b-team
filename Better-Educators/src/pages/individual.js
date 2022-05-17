@@ -4,6 +4,7 @@ import { doc, getDoc, collection } from 'firebase/firestore'
 import { db, auth, firestore } from '../firebase/firebase';
 import { useNavigate, useParams } from 'react-router-dom';
 import Comments from './comments';
+import { Container } from '../components/container';
 
 
 function IndividualPost({ isAuth }) {
@@ -27,6 +28,16 @@ function IndividualPost({ isAuth }) {
         getPost();
     }, []);
 
+    const triggerText = 'Report Post';
+    const onSubmit = (event) => {
+        event.preventDefault(event);
+        console.log(event.target.name.value)
+        console.log(event.target.email.value)
+        console.log(event.target.school.value)
+        console.log(event.target.resource.value)
+        console.log(event.target.description.value)
+    };
+
     if (isAuth && post) {
         return (
             <div className="individualPage">
@@ -43,6 +54,7 @@ function IndividualPost({ isAuth }) {
                     <div className='ip-postTextContainer'>{post.postText}</div>
                 </div>
                 <Comments />
+                <Container triggerText={triggerText} onSubmit={onSubmit} />
             </div>
         );
     }
