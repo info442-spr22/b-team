@@ -1,10 +1,11 @@
 import { React, useState, useEffect } from 'react';
 import '../Individual.css';
-import { doc, getDoc, collection } from 'firebase/firestore'
+import { doc, getDoc, collection, addDoc, deleteDoc } from 'firebase/firestore'
 import { db, auth, firestore } from '../firebase/firebase';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import Comments from './comments';
 import { Container } from '../components/container';
+import { Link } from 'react-router-dom';
 
 
 function IndividualPost({ isAuth }) {
@@ -16,9 +17,6 @@ function IndividualPost({ isAuth }) {
     let navigate = useNavigate();
 
     useEffect(() => {
-        if (!isAuth) {
-            navigate('/login');
-        }
         const getPost = async () => {
             const data = await getDoc(postRef);
             let info = data.data();
@@ -42,6 +40,14 @@ function IndividualPost({ isAuth }) {
         return (
             <div className="individualPage">
                 <div className='ip-post' key={post.id} id={post.id}>
+                    <div className="backButton">
+                        <button>
+                            <Link to={-1}>Back</Link>
+                        </button>
+                    </div>
+                    <div className="deleteButton">
+                        <DeletePost props={{ postId: postId }} />
+                    </div>
                     <div className='ip-postHeader'>
                         <div className='ip-title'>
                             <h1>{post.title}</h1>
@@ -59,4 +65,24 @@ function IndividualPost({ isAuth }) {
         );
     }
 }
+
+function DeletePost(props) {
+    let navigate = useNavigate();
+    const postRef = doc(db, "posts", props.props.postId);
+    const postDelete = async () => {
+        let text = "Are you sure you want to delete the post?";
+        if (window.confirm(text) == true) {
+            text = "You pressed OK!";
+            await deleteDoc(postRef);
+            navigate('/home');
+        } else {
+            text = "You canceled!";
+            navigate('/post/' + props.props.postId);
+        }
+    }
+    return (
+        <button onClick={postDelete}>Delete Post</button>
+    )
+}
+
 export default IndividualPost;

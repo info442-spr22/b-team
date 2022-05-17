@@ -140,3 +140,18 @@ a {
   overflow: hidden;
   margin-right: 17px;
 }
+@media (max-width: 768px) { 
+  .App-header button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  nav {
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+
+}

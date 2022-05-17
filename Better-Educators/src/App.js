@@ -5,20 +5,33 @@ import Login from './pages/login';
 import { auth } from './firebase/firebase';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link, Switch, useNavigate } from "react-router-dom";
-import { useState } from 'react'
-import { signOut, signUserOut } from 'firebase/auth';
+import { useEffect, useState } from 'react'
+import { signOut, signUserOut, getAuth, onAuthStateChanged } from 'firebase/auth';
 
 
 function App() {
   const [isAuth, setIsAuth] = useState(false)
 
+  useEffect(() => {
+    const auth = getAuth();
+    const unregisterAuthListener = onAuthStateChanged(auth, (firebaseUser) => {
+      if (firebaseUser) {
+        setIsAuth(true);
+      } else {
+        setIsAuth(false);
+      }
+    });
+    function cleanup() {
+      unregisterAuthListener();
+    }
+    return cleanup;
+  }, []);
   const signUserOut = () => {
     signOut(auth).then(() => {
       localStorage.clear()
       setIsAuth(false)
       window.location.pathname = "/login";
     })
-
   }
   return (
     <Router>
@@ -38,7 +51,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home isAuth={isAuth}/>} />
             <Route path="/home" element={<Home isAuth={isAuth}/>} />
-            <Route path="/post" element={<Post isAuth={isAuth} />} />
+            <Route path="/post" element={<Post />} />
             <Route path="/post/:postId" element={<IndividualPost isAuth={isAuth} />}/>
             <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
           </Routes>
