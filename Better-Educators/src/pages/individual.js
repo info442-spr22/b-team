@@ -4,6 +4,7 @@ import { doc, getDoc, collection, addDoc, deleteDoc } from 'firebase/firestore'
 import { db, auth, firestore } from '../firebase/firebase';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import Comments from './comments';
+import { Container } from '../components/container';
 import { Link } from 'react-router-dom';
 
 
@@ -25,18 +26,22 @@ function IndividualPost({ isAuth }) {
         getPost();
     }, []);
 
+    const triggerText = 'Report Post';
+    const onSubmit = (event) => {
+        event.preventDefault(event);
+        console.log(event.target.name.value)
+        console.log(event.target.email.value)
+        console.log(event.target.school.value)
+        console.log(event.target.resource.value)
+        console.log(event.target.description.value)
+    };
+
     if (isAuth && post) {
         return (
             <div className="individualPage">
                 <div className='ip-post' key={post.id} id={post.id}>
-                    <div className="backButton">
-                        <button>
-                            <Link to={-1}>Back</Link>
-                        </button>
-                    </div>
-                    <div className="deleteButton">
-                        <DeletePost props={{ postId: postId }} />
-                    </div>
+
+
                     <div className='ip-postHeader'>
                         <div className='ip-title'>
                             <h1>{post.title}</h1>
@@ -47,8 +52,17 @@ function IndividualPost({ isAuth }) {
                         </div>
                     </div>
                     <div className='ip-postTextContainer'>{post.postText}</div>
+                    <div className="deleteButton">
+                        <DeletePost props={{ postId: postId }} />
+                    </div>
                 </div>
                 <Comments />
+                <div className="backButton">
+                    <button className='back-button'>
+                        <Link to={-1}>Back</Link>
+                    </button>
+                </div>
+                <Container triggerText={triggerText} onSubmit={onSubmit} />
             </div>
         );
     }
@@ -69,7 +83,7 @@ function DeletePost(props) {
         }
     }
     return (
-        <button onClick={postDelete}>Delete Post</button>
+        <button className='delete-button' onClick={postDelete}>Delete Post</button>
     )
 }
 

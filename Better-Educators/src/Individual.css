@@ -1,3 +1,10 @@
+.individualPage {
+  
+
+}
+
+
+
 .ip-post {
     width: 60%;
     background-color: rgb(250, 250, 250);
@@ -12,7 +19,7 @@
 .ip-post h1 {
     margin-top: 20px;
     margin-bottom: 0;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 .ip-post .ip-title h4 pre {
@@ -66,11 +73,48 @@ form {
     width: 20%;
     margin-left: auto;
     margin-right: 0;
-    font-weight: bold;
-    background-color: #a5be00;
+    font-weight: 500;
+    background-color: #6ec95e;
     border: none;
     font-size: 12px;
+    border-radius: 9px;
+    color: white;
 }
+
+.back-button {
+    background-color: #279ece;
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 9px;
+    padding: 1px 20px;
+    margin: 4px 4px;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: bottom;
+
+}
+
+.delete-button {
+    background-color: #e16967;
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 9px;
+    padding: 1px 20px;
+    margin: 4px 4px;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+
 
 .comment {
     border: 1px solid black;
@@ -84,7 +128,8 @@ form {
     flex-direction: column;
 }
 
-.comment-author, .comment-date {
+.comment-author,
+.comment-date {
     margin: 0;
 }
 

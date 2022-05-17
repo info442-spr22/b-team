@@ -36,13 +36,14 @@ function App() {
   return (
     <Router>
       <nav>
+        <a className='nav-name'>🦉BE🎓</a>
         {!isAuth ? (
           <Link to="/login">Login</Link>
         ) : (
           <>
             <Link to="/home">Home</Link>
             <Link to="/post">Create Post</Link>
-            <button onClick={signUserOut}>Log out</button>
+            <button className='logout-button' onClick={signUserOut}>Log out</button>
           </>
         )}
       </nav>

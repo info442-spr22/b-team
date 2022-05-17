@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react';
+import { React, useState, useEffect, useRef } from 'react';
 import '../Post.css'
 import { addDoc, collection } from 'firebase/firestore'
 import { db, auth } from '../firebase/firebase';
@@ -10,6 +10,7 @@ function Post() {
     const [title, setTitle] = useState('');
     const [postText, setPostText] = useState('');
     const [location, setLocation] = useState('');
+    const textRef = useRef();
     const [postable, setPostable] = useState(null);
     
     const [isAuth, setIsAuth] = useState(false);
@@ -69,6 +70,7 @@ function Post() {
 
             </div>
         </div>
+        
     );
 }
 export default Post;

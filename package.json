@@ -2,6 +2,8 @@
   "dependencies": {
     "dom": "^0.0.3",
     "firebase": "^9.6.11",
+    "focus-trap": "^6.9.2",
+    "focus-trap-react": "^8.11.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
