@@ -103,10 +103,10 @@ Keeping links/resources up to date through a comment form for the resource page.
     - Invalid link
     - Inappropriate link/content
     - Fraud
-4. `complete #73`Report pop-up contains a text input box underneath check-boxes/radio buttons to describe the issue in further detail 
+4. `complete #73` Report pop-up contains a text input box underneath check-boxes/radio buttons to describe the issue in further detail 
 5. Report pop-up contains a submit button at the bottom of the pop-up
 6. Submitting a report displays a confirmation message in the same pop-up that the user’s report was received
-7.`complete #73` Contains a form for educators to submit which includes:
+7. `complete #73` Contains a form for educators to submit which includes:
     - Name 
     - School 
     - Resource 
