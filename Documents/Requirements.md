@@ -15,8 +15,8 @@ There are two types of requirements: core (those the team commits to meeting dur
 1. `Complete #40` When a user is not logged in the option the following Navigation bar contains:
     - `Complete #40` "Login" as a navigation button 
 2. `Complete #40` When a user is logged in the following Navigation bar contains (from left to right): 
-    - `incomplete` An image of the app logo 
-    - `incomplete`Name of the app
+    - `Complete #73` An image of the app logo 
+    - `Complete #73` Name of the app
     - `Complete #40`"Home" as a navigation button
     - `Complete #40`"Create Post" as a navigation button
     - `Complete #40`"Logout" as a navigation button
@@ -97,23 +97,23 @@ There are two types of requirements: core (those the team commits to meeting dur
 ## Reliability 
 Keeping links/resources up to date through a comment form for the resource page. If a resource provided is out of date/no longer active than a comment form could be submitted
 
-1. Contains a report button on the home page and pages for individual posts
-2. Report button opens a pop-up
-3. Report-pop up contains check-boxes/radio buttons to select the type of issue the resource is being faced with. Issues include:
+1. `complete #73` Contains a report button on the home page and pages for individual posts
+2.`complete #73` Report button opens a pop-up
+3.`complete #73` Report-pop up contains check-boxes/radio buttons to select the type of issue the resource is being faced with. Issues include:
     - Invalid link
     - Inappropriate link/content
     - Fraud
-4. Report pop-up contains a text input box underneath check-boxes/radio buttons to describe the issue in further detail 
+4. `complete #73`Report pop-up contains a text input box underneath check-boxes/radio buttons to describe the issue in further detail 
 5. Report pop-up contains a submit button at the bottom of the pop-up
 6. Submitting a report displays a confirmation message in the same pop-up that the user’s report was received
-7. Contains a form for educators to submit which includes:
+7.`complete #73` Contains a form for educators to submit which includes:
     - Name 
     - School 
     - Resource 
     - Description section 
     - Form of contact
-8. Contains instructions for the form
-9. Contains a submit button on form to push upon completion
+8. `complete #73` Contains instructions for the form
+9. `complete #73` Contains a submit button on form to push upon completion
     - Contains text about completion of form
 
 ## Usability/Accessibility
