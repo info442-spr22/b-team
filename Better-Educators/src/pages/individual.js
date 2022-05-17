@@ -40,14 +40,8 @@ function IndividualPost({ isAuth }) {
         return (
             <div className="individualPage">
                 <div className='ip-post' key={post.id} id={post.id}>
-                    <div className="backButton">
-                        <button>
-                            <Link to={-1}>Back</Link>
-                        </button>
-                    </div>
-                    <div className="deleteButton">
-                        <DeletePost props={{ postId: postId }} />
-                    </div>
+
+
                     <div className='ip-postHeader'>
                         <div className='ip-title'>
                             <h1>{post.title}</h1>
@@ -58,8 +52,16 @@ function IndividualPost({ isAuth }) {
                         </div>
                     </div>
                     <div className='ip-postTextContainer'>{post.postText}</div>
+                    <div className="deleteButton">
+                        <DeletePost props={{ postId: postId }} />
+                    </div>
                 </div>
                 <Comments />
+                <div className="backButton">
+                    <button className='back-button'>
+                        <Link to={-1}>Back</Link>
+                    </button>
+                </div>
                 <Container triggerText={triggerText} onSubmit={onSubmit} />
             </div>
         );
@@ -81,7 +83,7 @@ function DeletePost(props) {
         }
     }
     return (
-        <button onClick={postDelete}>Delete Post</button>
+        <button className='delete-button' onClick={postDelete}>Delete Post</button>
     )
 }
 
