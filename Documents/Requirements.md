@@ -98,8 +98,8 @@ There are two types of requirements: core (those the team commits to meeting dur
 Keeping links/resources up to date through a comment form for the resource page. If a resource provided is out of date/no longer active than a comment form could be submitted
 
 1. `complete #73` Contains a report button on the home page and pages for individual posts
-2.`complete #73` Report button opens a pop-up
-3.`complete #73` Report-pop up contains check-boxes/radio buttons to select the type of issue the resource is being faced with. Issues include:
+2. `complete #73` Report button opens a pop-up
+3. `complete #73` Report-pop up contains check-boxes/radio buttons to select the type of issue the resource is being faced with. Issues include:
     - Invalid link
     - Inappropriate link/content
     - Fraud
