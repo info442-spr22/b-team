@@ -18,10 +18,8 @@ function Post() {
         const auth = getAuth();
         const unregisterAuthListener = onAuthStateChanged(auth, (firebaseUser) => {
             if (firebaseUser) {
-                console.log("logging in", firebaseUser.displayName);
                 setIsAuth(true);
             } else {
-            console.log("logging out");
                 navigate('/login');
             }
         });
