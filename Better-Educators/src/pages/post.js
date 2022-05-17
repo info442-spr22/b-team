@@ -52,19 +52,20 @@ function Post() {
                     </button>
                 </div>
                 <h1>Create a Post</h1>
-                <div className='inputGp'></div>
-                {postable &&
-                    <div className="alert" variant='danger' dismissible onClose={() => setPostable(null)}>{postable}</div>
-                }
-                <label>Title:</label>
-                <input placeholder="Title..." onChange={(event) => { setTitle(event.target.value) }} required />
                 <div className='inputGp'>
-                    <label>Post:</label>
-                    <textarea placeholder="Post..." onChange={(event) => { setPostText(event.target.value) }} required />
+                    {postable &&
+                        <div className="alert" variant='danger' dismissible onClose={() => setPostable(null)}>{postable}</div>
+                    }
+                    <label>Title:</label>
+                    <input placeholder="Title..." onChange={(event) => { setTitle(event.target.value) }} required />
+                    <div className='inputGp'>
+                        <label>Post:</label>
+                        <textarea placeholder="Post..." onChange={(event) => { setPostText(event.target.value) }} required />
+                    </div>
+                    <label>Location:</label>
+                    <input placeholder="Location..." onChange={(event) => { setLocation(event.target.value) }} />
                 </div>
-                <label>Location:</label>
-                <input placeholder="Location..." onChange={(event) => { setLocation(event.target.value) }} />
-                <button onClick={createPost}>Submit</button>
+                <button className="submitPostButton" onClick={createPost}>Submit</button>
 
             </div>
         </div>
