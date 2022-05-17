@@ -53,11 +53,6 @@ function Post() {
                     </button>
                 </div>
                 <h1>Create a Post</h1>
-                <div className='inputGp'></div>
-                <form>
-                <label>Title:</label>
-                <input placeholder="Title..." onChange={(event) => { setTitle(event.target.value) }} required />
-                </form>
                 <div className='inputGp'>
                     {postable &&
                         <div className="alert" variant='danger' dismissible onClose={() => setPostable(null)}>{postable}</div>
@@ -71,14 +66,11 @@ function Post() {
                     <label>Location:</label>
                     <input placeholder="Location..." onChange={(event) => { setLocation(event.target.value) }} />
                 </div>
-                <label>Location:</label>
-                <input placeholder="Location..." onChange={(event) => { setLocation(event.target.value) }} />
-                
-                <button onClick={createPost}>Submit</button>
                 <button className="submitPostButton" onClick={createPost}>Submit</button>
 
             </div>
         </div>
+        
     );
 }
 export default Post;
