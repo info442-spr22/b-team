@@ -1,11 +1,20 @@
-import React from 'react';
-
-
-
+import { React, useState } from 'react';
 
 
 export const Form = ({ onSubmit }) => {
-   
+
+    const [value, setValue] = useState(false);
+
+    const handleChangeOne = () => {
+        setValue('invalid link');
+    }
+    const handleChangeTwo = () => {
+        setValue('Inappropriate link/content');
+    }
+    const handleChangeThree = () => {
+        setValue('Fraud');
+    }
+
     return (
         <form onSubmit={onSubmit}>
             <div>
@@ -16,19 +25,19 @@ export const Form = ({ onSubmit }) => {
             </div>
             <div className='radio'>
                 <label>
-                    <input type='radio' value='option 1' checked={false} />
+                    <input type='radio' value='option 1' checked={value === 'invalid link'} onChange={handleChangeOne} />
                     invalid link
                 </label>
             </div>
             <div className='radio'>
                 <label>
-                    <input type='radio' value='option 2' checked={false} />
+                    <input type='radio' value='option 2' checked={value === 'Inappropriate link/content'} onChange={handleChangeTwo} />
                     Inappropriate link/content
                 </label>
             </div>
             <div className='radio'>
                 <label>
-                    <input type='radio' value='option 3' checked={false} />
+                    <input type='radio' value='option 3' checked={value === 'Fraud'} onChange={handleChangeThree} />
                     Fraud
                 </label>
             </div>
