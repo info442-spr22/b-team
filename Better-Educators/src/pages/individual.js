@@ -16,9 +16,6 @@ function IndividualPost({ isAuth }) {
     let navigate = useNavigate();
 
     useEffect(() => {
-        if (!isAuth) {
-            navigate('/login');
-        }
         const getPost = async () => {
             const data = await getDoc(postRef);
             let info = data.data();
@@ -27,6 +24,7 @@ function IndividualPost({ isAuth }) {
         }
         getPost();
     }, []);
+
     if (isAuth && post) {
         return (
             <div className="individualPage">
@@ -67,7 +65,7 @@ function DeletePost(props) {
             navigate('/home');
         } else {
             text = "You canceled!";
-            navigate('/home')
+            navigate('/post/' + props.props.postId);
         }
     }
     return (

@@ -6,23 +6,31 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 function Comments({ isAuth }) {
     const [commentText, setCommentText] = useState([]);
+    const [commentable, setCommentable] = useState(null);
+
     let postId = useParams().postId;
 
     const commentsCollectionRef = collection(db, "posts", postId, "comments");
     let navigate = useNavigate();
 
     const createComment = async () => {
-        await addDoc(commentsCollectionRef, {
-            commentText, date: Date.now(), author: { name: auth.currentUser.displayName, id: auth.currentUser.uid }
-        });
-        navigate(0); // This refreshes the page but there's an issue with our authentication. See comment below.
+        if (commentText === '') {
+            setCommentable("Empty Fields!");
+        } else {
+            await addDoc(commentsCollectionRef, {
+                commentText, date: Date.now(), author: { name: auth.currentUser.displayName, id: auth.currentUser.uid }
+            });
+        }
     };
 
     return (
         <div id="comment-section">
             <div id="comment-form">
-                <form method="post" id="comment-form">
+                <form id="comment-form">
                     <p className="form-label">Comments</p>
+                    {commentable &&
+                        <div className="alert" variant='danger' dismissible onClose={() => setCommentable(null)}>{commentable}</div>
+                    }
                     <textarea id="comment-text" name="comment-text" placeholder="Write something..." onChange={(event) => { setCommentText(event.target.value) }} required></textarea>
                     <button id="submit-button" name="submit-button" onClick={createComment}>Comment</button>
                 </form>
@@ -68,15 +76,15 @@ function DeleteComment(props) {
     let navigate = useNavigate();
     const commentRef = doc(db, "posts", props.props.postId, "comments", props.props.commentId);
     const commentDelete = async () => {
-        await deleteDoc(commentRef);
-        navigate(0); // This refreshes the page but there are issues:
-        /*
-            When it refreshes the page, it automatically logs the user out.
-            The comment deleting itself works, but because it logs the user out upon refreshing,
-            they won't be able to see the update until after they log in.
-            In other words, we need to make it so that upon refreshing, users will not get logged out
-            of their session.
-        */
+        let text = "Are you sure you want to delete the comment?";
+        if (window.confirm(text) == true) {
+            text = "You pressed OK!";
+            await deleteDoc(commentRef);
+            navigate(0);
+        } else {
+            text = "You canceled!";
+            navigate('/post/' + props.props.postId);
+        }
     }
     return (
         <button onClick={commentDelete}>Delete Comment</button>
