@@ -2,13 +2,35 @@ import React from 'react';
 
 
 
+
+
 export const Form = ({ onSubmit }) => {
+   
     return (
         <form onSubmit={onSubmit}>
             <div>
                 <h4 className='form-header'>Found a problem? Fill out this form to let us know!
                     <br />
                     🦉</h4>
+                <p className='type-of-issue'>Type of issue: </p>
+            </div>
+            <div className='radio'>
+                <label>
+                    <input type='radio' value='option 1' checked={false} />
+                    invalid link
+                </label>
+            </div>
+            <div className='radio'>
+                <label>
+                    <input type='radio' value='option 2' checked={false} />
+                    Inappropriate link/content
+                </label>
+            </div>
+            <div className='radio'>
+                <label>
+                    <input type='radio' value='option 3' checked={false} />
+                    Fraud
+                </label>
             </div>
             <div className='form-group'>
                 <label htmlFor='name'>Name</label>
@@ -40,7 +62,7 @@ export const Form = ({ onSubmit }) => {
             <div className="form-group">
                 <button className="form-control btn btn-primary" type="submit" >
                     Submit
-                    
+
                 </button>
             </div>
         </form>

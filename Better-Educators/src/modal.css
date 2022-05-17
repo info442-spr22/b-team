@@ -8,6 +8,14 @@
     transform: translateZ(0);
     background-color: rgba(0, 0, 0, 0.8);
 }
+.radio{
+  display: inline-block;
+  vertical-align: top;
+}
+.type-of-issue{
+  color: black;
+  font-weight: 400;
+}
 
 .modal-area {
     position: fixed;
