@@ -87,6 +87,6 @@ function DeleteComment(props) {
         }
     }
     return (
-        <button onClick={commentDelete}>Delete Comment</button>
+        <button className='delete-button' onClick={commentDelete}>Delete Comment</button>
     )
 }

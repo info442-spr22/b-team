@@ -1,3 +1,7 @@
+.goBack {
+  background-color: #05668D;
+}
+
 .createPostPage {
   width: 100%;
   height: calc(100vh - 80px);
@@ -6,7 +10,7 @@
 }
 
 .cpContainer {
-  width: 500px;
+  width: 90%;
   padding: 20px;
   background-color: #05668D;
   border-radius: 12px;
@@ -19,10 +23,11 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .cpContainer label {
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
 }
 .cpContainer .inputGp {
@@ -31,7 +36,7 @@
 }
 
 .inputGp input, .inputGp textarea {
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   border-radius: 2px;
   padding: 5px;
@@ -39,8 +44,9 @@
 }
 
 .inputGp input {
-  height: 40px;
+  height: 30px;
 }
+
 .inputGp textarea {
   height: 150px;
   font-family: Arial, Helvetica, sans-serif;
@@ -62,7 +68,7 @@ input, textarea {
 .alert {
   background-color: lightsalmon;
   color: black;
-  padding: 15px;
+  padding: 10px 20px;
   display: flex;
   align-self: center;
   justify-content: center;
@@ -71,4 +77,83 @@ input, textarea {
 
 .cpContainer .submitPostButton {
   margin-top: 10px;
+  background-color: #05668D;
+  color: white;
+}
+
+@media(min-width: 768px) {
+  .createPostPage {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: grid;
+    place-items: center;
+  }
+  
+  .cpContainer {
+    width: 500px;
+    padding: 20px;
+    background-color: #05668D;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cpContainer h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .cpContainer label {
+    font-size: 20px;
+    text-align: left;
+  }
+  .cpContainer .inputGp {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputGp input, .inputGp textarea {
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .inputGp input {
+    height: 40px;
+  }
+  .inputGp textarea {
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .cpContainer button {
+    margin-top: 0px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  input, textarea {
+    margin-top: 5px;
+  }
+    
+  .alert {
+    background-color: lightsalmon;
+    color: black;
+    padding: 15px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .cpContainer .submitPostButton {
+    margin-top: 10px;
+  }
 }
