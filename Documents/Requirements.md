@@ -104,8 +104,8 @@ Keeping links/resources up to date through a comment form for the resource page.
     - Inappropriate link/content
     - Fraud
 4. `complete #73` Report pop-up contains a text input box underneath check-boxes/radio buttons to describe the issue in further detail 
-5. Report pop-up contains a submit button at the bottom of the pop-up
-6. Submitting a report displays a confirmation message in the same pop-up that the user’s report was received
+5.`complete #76` Report pop-up contains a submit button at the bottom of the pop-up
+6. `complete #76`Submitting a report displays a confirmation message in the same pop-up that the user’s report was received
 7. `complete #73` Contains a form for educators to submit which includes:
     - Name 
     - School 
@@ -119,7 +119,7 @@ Keeping links/resources up to date through a comment form for the resource page.
 ## Usability/Accessibility
 Website is responsive and usable on mobile devices, laptops, and desktops
 
-1. Media Queries work accordingly for all screen sizes:
+1. `complete #75` Media Queries work accordingly for all screen sizes:
     - Phones
     - Laptops
     - Tablets
