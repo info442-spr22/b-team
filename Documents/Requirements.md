@@ -12,9 +12,9 @@ There are two types of requirements: core (those the team commits to meeting dur
 - Log out button which will logout the user
 
 ## Navigation Bar
-1. `Complete #40` When a user is not logged in the option the following Navigation bar contains:
+1. `complete #40` When a user is not logged in the option the following Navigation bar contains:
     - `Complete #40` "Login" as a navigation button 
-2. `Complete #40` When a user is logged in the following Navigation bar contains (from left to right): 
+2. `complete #40` When a user is logged in the following Navigation bar contains (from left to right): 
     - `Complete #73` An image of the app logo 
     - `Complete #73` Name of the app
     - `Complete #40`"Home" as a navigation button
@@ -34,13 +34,13 @@ There are two types of requirements: core (those the team commits to meeting dur
 > Note: `complete #32` User will be able to scroll through and view all past posts
 
 ## Home Option 2 (Stretch Goal): 
-### Interactive Washington State Map
+### Interactive Washington State Map `incomplete`
 > Example diagram:  https://www.nytimes.com/interactive/2021/us/washington-covid-cases.html
 1. The interactive map will allow users to hover and click their choice of county
 2. Once county of choice is clicked a popup appears including the resource link and county name (interactive map)
 3. When users click on their county of choice, they will be redirected to its respective resource page (external from our site)
 
-## Your Posts Page (Stretch Goal):
+## Your Posts Page (Stretch Goal) `incomplete`
 1. Title of the page (“Your Posts”) is centered at the top of the page
 2. Below the title on the left side, the user’s account information is displayed (name, username)
 3. Below the title on the right side, previews of the user’s posts are displayed in chronological order (older posts towards the bottom, newer posts towards the top)
@@ -60,7 +60,7 @@ There are two types of requirements: core (those the team commits to meeting dur
        - Author of the post
     - `complete #32` Forum page will be in one section, with the main forum component centered in the screen
     - `complete #52` Clicking on the individual post within the post boundaries will redirect the user to a page with further details about that post
-    - **(Stretch goal):** Forum will have a search bar above the forum posts to allow users to find posts with certain keywords
+    - **(Stretch goal) `incomplete`:** Forum will have a search bar above the forum posts to allow users to find posts with certain keywords
 
 ## Individual Forum Posts
 
