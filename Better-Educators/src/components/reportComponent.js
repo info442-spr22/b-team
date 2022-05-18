@@ -5,6 +5,8 @@ export const Form = ({ onSubmit }) => {
 
     const [value, setValue] = useState(false);
 
+    const [open, setOpen] = useState(false)
+
     const handleChangeOne = () => {
         setValue('invalid link');
     }
@@ -14,9 +16,16 @@ export const Form = ({ onSubmit }) => {
     const handleChangeThree = () => {
         setValue('Fraud');
     }
+    const handleSubmit = ()=>{
+        setTimeout(()=>{
+
+            onSubmit()
+        }, 5000)
+        setOpen(true)
+    }
 
     return (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={handleSubmit}>
             <div>
                 <h4 className='form-header'>Found a problem? Fill out this form to let us know!
                     <br />
@@ -69,10 +78,13 @@ export const Form = ({ onSubmit }) => {
                 <textarea className='form-control' id='description' placeholder='what is the issue?' required />
             </div>
             <div className="form-group">
-                <button className="form-control btn btn-primary" type="submit" >
+                <button className="form-control btn btn-primary" type="submit">
                     Submit
-
                 </button>
+            </div>
+
+            <div style={{display: open ? "block" : "none"}}>
+                Thank you for submitting!
             </div>
         </form>
     );

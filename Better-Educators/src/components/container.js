@@ -24,7 +24,7 @@ export class Container extends Component {
     if (this.modal && this.modal.contains(event.target)) return;
     this.closeModal();
   };
-
+  
   toggleScrollLock = () => {
     document.querySelector('html').classList.toggle('scroll-lock');
   };
