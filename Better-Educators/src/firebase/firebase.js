@@ -1,5 +1,5 @@
 import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth'
+import 'firebase/compat/auth';
 import { getFirestore } from 'firebase/firestore';
 
 // Old Firebase Database
@@ -26,6 +26,6 @@ const app = firebase.initializeApp ({
   measurementId: "G-KV9H2WEWF8"
 });
 
-export const auth = app.auth()
-export const db = getFirestore(app)
-export default app
+export const auth = app.auth();
+export const db = getFirestore(app);
+export default app;

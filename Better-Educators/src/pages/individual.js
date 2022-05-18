@@ -1,20 +1,37 @@
 import { React, useState, useEffect } from 'react';
 import '../Individual.css';
-import { doc, getDoc, collection, addDoc, deleteDoc } from 'firebase/firestore'
+import { doc, getDoc, collection, addDoc, deleteDoc } from 'firebase/firestore';
 import { db, auth, firestore } from '../firebase/firebase';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import Comments from './comments';
 import { Container } from '../components/container';
 import { Link } from 'react-router-dom';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
-
-function IndividualPost({ isAuth }) {
+function IndividualPost() {
     const [post, setPostInfo] = useState([]);
     const [name, setName] = useState("");
     let postId = useParams().postId;
 
-    const postRef = doc(db, "posts", postId);
     let navigate = useNavigate();
+    const [isAuth, setIsAuth] = useState(false);
+
+    useEffect(() => {
+        const auth = getAuth();
+        const unregisterAuthListener = onAuthStateChanged(auth, (firebaseUser) => {
+            if (firebaseUser) {
+                setIsAuth(true);
+            } else {
+                navigate('/login');
+            }
+        });
+        function cleanup() {
+            unregisterAuthListener();
+        }
+        return cleanup;
+    }, []);
+
+    const postRef = doc(db, "posts", postId);
 
     useEffect(() => {
         const getPost = async () => {
@@ -29,11 +46,11 @@ function IndividualPost({ isAuth }) {
     const triggerText = 'Report Post';
     const onSubmit = (event) => {
         event.preventDefault(event);
-        console.log(event.target.name.value)
-        console.log(event.target.email.value)
-        console.log(event.target.school.value)
-        console.log(event.target.resource.value)
-        console.log(event.target.description.value)
+        // console.log(event.target.name.value)
+        // console.log(event.target.email.value)
+        // console.log(event.target.school.value)
+        // console.log(event.target.resource.value)
+        // console.log(event.target.description.value)
     };
 
     if (isAuth && post) {
@@ -65,7 +82,7 @@ function IndividualPost({ isAuth }) {
                 <Container triggerText={triggerText} onSubmit={onSubmit} />
             </div>
         );
-    }
+    };
 }
 
 function DeletePost(props) {

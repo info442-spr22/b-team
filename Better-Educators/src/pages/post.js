@@ -1,6 +1,6 @@
 import { React, useState, useEffect, useRef } from 'react';
-import '../Post.css'
-import { addDoc, collection } from 'firebase/firestore'
+import '../Post.css';
+import { addDoc, collection } from 'firebase/firestore';
 import { db, auth } from '../firebase/firebase';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -30,17 +30,17 @@ function Post() {
         return cleanup;
     }, []);
 
-    const postsCollectionRef = collection(db, "posts")
+    const postsCollectionRef = collection(db, "posts");
     let navigate = useNavigate();
 
     const createPost = async () => {
         if (title === '' || postText === '') {
-            setPostable("Empty Fields!")
+            setPostable("Empty Fields!");
         } else {
             await addDoc(postsCollectionRef, {
                 title, date: Date.now(), location, postText, author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
             });
-            navigate('/home')
+            navigate('/home');
         }
     };
 
