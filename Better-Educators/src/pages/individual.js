@@ -47,11 +47,11 @@ function IndividualPost({ isAuth }) {
                             <h1>{post.title}</h1>
                             <h4><pre>{post.location}</pre></h4>
                         </div>
-                        <div className='ip-author'>
-                            <h4><pre>{name}  |  {new Date(post.date).toLocaleString()}</pre></h4>
-                        </div>
                     </div>
                     <div className='ip-postTextContainer'>{post.postText}</div>
+                    <div className='ip-author'>
+                        <h4><pre>{name}  |  {new Date(post.date).toLocaleString()}</pre></h4>
+                    </div>
                     <div className="deleteButton">
                         <DeletePost props={{ postId: postId }} />
                     </div>
