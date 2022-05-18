@@ -1,17 +1,35 @@
 import { React, useState, useEffect } from 'react';
 import '../Individual.css';
-import { doc, getDocs, collection, addDoc, deleteDoc } from 'firebase/firestore'
+import { doc, getDocs, collection, addDoc, deleteDoc } from 'firebase/firestore';
 import { db, auth } from '../firebase/firebase';
 import { useNavigate, useParams } from 'react-router-dom';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
-function Comments({ isAuth }) {
+function Comments() {
     const [commentText, setCommentText] = useState([]);
     const [commentable, setCommentable] = useState(null);
+
+    let navigate = useNavigate();
+    const [isAuth, setIsAuth] = useState(false);
+
+    useEffect(() => {
+        const auth = getAuth();
+        const unregisterAuthListener = onAuthStateChanged(auth, (firebaseUser) => {
+            if (firebaseUser) {
+                setIsAuth(true);
+            } else {
+                navigate('/login');
+            }
+        });
+        function cleanup() {
+            unregisterAuthListener();
+        }
+        return cleanup;
+    }, []);
 
     let postId = useParams().postId;
 
     const commentsCollectionRef = collection(db, "posts", postId, "comments");
-    let navigate = useNavigate();
 
     const createComment = async () => {
         if (commentText === '') {
@@ -21,7 +39,7 @@ function Comments({ isAuth }) {
                 commentText, date: Date.now(), author: { name: auth.currentUser.displayName, id: auth.currentUser.uid }
             });
         }
-    };
+    }
 
     return (
         <div id="comment-section">
@@ -46,14 +64,22 @@ export default Comments;
 function PastComments(props) {
     const [commentList, setCommentList] = useState([]);
     const commentsCollectionRef = collection(db, "posts", props.props, "comments");
+    
+    const [errorMessage, setErrorMessage] = useState(null);
+    
     useEffect(() => {
         const getComments = async () => {
-            const data = await getDocs(commentsCollectionRef);
-            const dataValues = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
-            let sorted = dataValues.sort((a, b) => {
-                return(b.date - a.date);
-            });
-            setCommentList(sorted);
+            try {
+                const data = await getDocs(commentsCollectionRef);
+                const dataValues = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+                let sorted = dataValues.sort((a, b) => {
+                    return(b.date - a.date);
+                });
+                setCommentList(sorted);
+            } catch (error) {
+                setErrorMessage(error);
+                console.log(error);
+            }
         };
 
         getComments();
@@ -88,5 +114,5 @@ function DeleteComment(props) {
     }
     return (
         <button className='delete-button' onClick={commentDelete}>Delete Comment</button>
-    )
+    );
 }

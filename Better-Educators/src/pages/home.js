@@ -1,14 +1,14 @@
 import { React, useState, useEffect } from 'react';
-import '../Home.css'
-import logo from '../logo.png'
+import '../Home.css';
+import logo from '../logo.png';
 import { db } from '../firebase/firebase';
-import { getDocs, collection, deleteDoc, doc } from 'firebase/firestore'
+import { getDocs, collection, deleteDoc, doc } from 'firebase/firestore';
 import { useNavigate, Link } from 'react-router-dom';
 import { Container } from '../components/container';
 
 function Home({ isAuth }) {
     const [postLists, setPostList] = useState([]);
-    const postsCollectionRef = collection(db, "posts")
+    const postsCollectionRef = collection(db, "posts");
     let navigate = useNavigate();
 
     useEffect(() => {
@@ -28,11 +28,11 @@ function Home({ isAuth }) {
     const triggerText = 'Report Post';
     const onSubmit = (event) => {
         event.preventDefault(event);
-        console.log(event.target.name.value)
-        console.log(event.target.email.value)
-        console.log(event.target.school.value)
-        console.log(event.target.resource.value)
-        console.log(event.target.description.value)
+        // console.log(event.target.name.value)
+        // console.log(event.target.email.value)
+        // console.log(event.target.school.value)
+        // console.log(event.target.resource.value)
+        // console.log(event.target.description.value)
 
         
     };

@@ -10,7 +10,7 @@ import { signOut, signUserOut, getAuth, onAuthStateChanged } from 'firebase/auth
 
 
 function App() {
-  const [isAuth, setIsAuth] = useState(false)
+  const [isAuth, setIsAuth] = useState(false);
 
   useEffect(() => {
     const auth = getAuth();
@@ -28,11 +28,11 @@ function App() {
   }, []);
   const signUserOut = () => {
     signOut(auth).then(() => {
-      localStorage.clear()
-      setIsAuth(false)
+      localStorage.clear();
+      setIsAuth(false);
       window.location.pathname = "/login";
-    })
-  }
+    });
+  };
   return (
     <Router>
       <nav>
