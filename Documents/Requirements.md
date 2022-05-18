@@ -25,8 +25,9 @@ There are two types of requirements: core (those the team commits to meeting dur
 1.`complete #33` When users are not logged in the home page, it will contain the following:
     - A divided page of two sections
     - Our logo and product title 
-    - Below in a paragraph is the slogan and a short description of our application
-2. `complete #32` If a user is logged in, the page has three sections
+    - `complete #78` Below in a paragraph is the slogan and a short description of our application
+    
+2.  `complete #32` If a user is logged in, the page has three sections
     - Better Educators logo
     - slogan and paragraph with description of application
     - previous posts from other users
