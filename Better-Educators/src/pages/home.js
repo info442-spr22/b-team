@@ -55,7 +55,8 @@ function Home({ isAuth }) {
                         </div>
                     </div>
                     <div className='postTextContainer'>{post.postText}</div>
-                    <h4><pre>@ {post.author.name}   {new Date(post.date).toLocaleString()}   {post.location}</pre></h4>
+                    <h4><pre>@ {post.author.name}   {new Date(post.date).toLocaleString()}</pre></h4>
+                    <h4><pre className='locationPre'>{post.location}</pre></h4>
                     <button id='weird-button'><Link to={"/post/" + post.id}>More Info</Link></button>
                     <Container triggerText={triggerText} onSubmit={onSubmit}/>
                 </div>
