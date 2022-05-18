@@ -26,11 +26,11 @@ There are two types of requirements: core (those the team commits to meeting dur
     - A divided page of two sections
     - Our logo and product title 
     - Below in a paragraph is the slogan and a short description of our application
-2. `complete #32`If a user is logged in, the page has three sections
+2. `complete #32` If a user is logged in, the page has three sections
     - Better Educators logo
     - slogan and paragraph with description of application
     - previous posts from other users
- > Note: `complete #32` User will be able to scroll through and view all past posts
+> Note: `complete #32` User will be able to scroll through and view all past posts
 
 ## Home Option 2 (Stretch Goal): 
 ### Interactive Washington State Map
@@ -104,7 +104,7 @@ Keeping links/resources up to date through a comment form for the resource page.
     - Inappropriate link/content
     - Fraud
 4. `complete #73` Report pop-up contains a text input box underneath check-boxes/radio buttons to describe the issue in further detail 
-5.`complete #76` Report pop-up contains a submit button at the bottom of the pop-up
+5. `complete #76` Report pop-up contains a submit button at the bottom of the pop-up
 6. `complete #76`Submitting a report displays a confirmation message in the same pop-up that the user’s report was received
 7. `complete #73` Contains a form for educators to submit which includes:
     - Name 
