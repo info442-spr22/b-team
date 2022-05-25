@@ -6,7 +6,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 function Comments() {
-    const [commentText, setCommentText] = useState([]);
+    const [commentText, setCommentText] = useState();
     const [commentable, setCommentable] = useState(null);
     const [user, setUser] = useState({});
 
@@ -32,7 +32,6 @@ function Comments() {
     let postId = useParams().postId;
 
     const commentsCollectionRef = collection(db, "posts", postId, "comments");
-
     const createComment = async () => {
         if (commentText === '') {
             setCommentable("Empty Fields!");
