@@ -8,6 +8,7 @@ import { getAuth, onAuthStateChanged } from 'firebase/auth';
 function Comments() {
     const [commentText, setCommentText] = useState([]);
     const [commentable, setCommentable] = useState(null);
+    const [user, setUser] = useState({});
 
     let navigate = useNavigate();
     const [isAuth, setIsAuth] = useState(false);
@@ -17,6 +18,7 @@ function Comments() {
         const unregisterAuthListener = onAuthStateChanged(auth, (firebaseUser) => {
             if (firebaseUser) {
                 setIsAuth(true);
+                setUser(firebaseUser);
             } else {
                 navigate('/login');
             }
@@ -54,7 +56,7 @@ function Comments() {
                 </form>
             </div>
 
-            <PastComments props={postId}/>
+            <PastComments props={postId} user={user}/>
         </div>
     );
 }
@@ -66,7 +68,8 @@ function PastComments(props) {
     const commentsCollectionRef = collection(db, "posts", props.props, "comments");
     
     const [errorMessage, setErrorMessage] = useState(null);
-    
+    const user = props.user;
+
     useEffect(() => {
         const getComments = async () => {
             try {
@@ -91,8 +94,8 @@ function PastComments(props) {
                 <p className='comment-author'>{comment.author.name}</p>
                 <p className='comment-text'>{comment.commentText}</p>
                 <h5 className='comment-date'>{new Date(comment.date).toLocaleString()}</h5>
-
-                <DeleteComment props={{ postId: props.props, commentId: comment.id}}/>
+                {(user.uid === comment.author.id) &&
+                <DeleteComment props={{ postId: props.props, commentId: comment.id}}/> }
             </div>
         )
     }));
