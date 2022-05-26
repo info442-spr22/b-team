@@ -4,8 +4,7 @@ import { React, useState } from 'react';
 export const Form = ({ onSubmit }) => {
 
     const [value, setValue] = useState(false);
-
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
 
     const handleChangeOne = () => {
         setValue('invalid link');
@@ -16,12 +15,20 @@ export const Form = ({ onSubmit }) => {
     const handleChangeThree = () => {
         setValue('Fraud');
     }
-    const handleSubmit = ()=>{
-        setTimeout(()=>{
+    const handleChangeFour = () => {
+        setValue('Other');
+    }
+    const handleSubmit = () => {
 
-            onSubmit()
-        }, 5000)
         setOpen(true)
+        setTimeout(() => {
+            onSubmit()
+            console.log("did this work")
+            
+            setOpen(false)
+            
+        }, 1000)
+
     }
 
     return (
@@ -34,20 +41,26 @@ export const Form = ({ onSubmit }) => {
             </div>
             <div className='radio'>
                 <label>
-                    <input type='radio' value='option 1' checked={value === 'invalid link'} onChange={handleChangeOne} />
+                    <input type='radio' value='option 1' name='radiofamily' checked={value === 'invalid link'} onChange={handleChangeOne} required />
                     invalid link
                 </label>
             </div>
             <div className='radio'>
                 <label>
-                    <input type='radio' value='option 2' checked={value === 'Inappropriate link/content'} onChange={handleChangeTwo} />
+                    <input type='radio' value='option 2' name='radiofamily' checked={value === 'Inappropriate link/content'} onChange={handleChangeTwo} required />
                     Inappropriate link/content
                 </label>
             </div>
             <div className='radio'>
                 <label>
-                    <input type='radio' value='option 3' checked={value === 'Fraud'} onChange={handleChangeThree} />
+                    <input type='radio' value='option 3' name='radiofamily' checked={value === 'Fraud'} onChange={handleChangeThree} required />
                     Fraud
+                </label>
+            </div>
+            <div className='radio'>
+                <label>
+                    <input type='radio' value='option 4' name='radiofamily' checked={value === 'Other'} onChange={handleChangeFour} required />
+                    Other
                 </label>
             </div>
             <div className='form-group'>
@@ -83,8 +96,10 @@ export const Form = ({ onSubmit }) => {
                 </button>
             </div>
 
-            <div style={{display: open ? "block" : "none"}}>
-                Thank you for submitting!
+            <div style={{ display: open ? "block" : "none" }}>
+                Thank you for submitting!Now returning to the previous page.
+                <br />
+                🦉
             </div>
         </form>
     );
