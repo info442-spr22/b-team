@@ -7,6 +7,7 @@
   pointer-events: none;
 }
 
+
 @media(max-width: 768px) {
   header p {
     margin: auto;
@@ -29,6 +30,7 @@
   a:focus {
     color: white;
   }
+  
 }
 
 .App-header {
@@ -69,7 +71,8 @@ nav {
   
   a:focus {
     color: white;
-  }  
+  }
+  
 }
 
 .logout-button{
