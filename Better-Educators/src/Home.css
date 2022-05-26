@@ -77,6 +77,20 @@ h4 pre {
   margin-right: -20px;
 }
 
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 70px;
+  background: #05668D;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
+  padding: 0 5px 10px;
+}
+
 @media(min-width: 768px) {
   .page-description {
     padding-top: 20px;

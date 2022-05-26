@@ -10,7 +10,9 @@ import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 function IndividualPost() {
     const [post, setPostInfo] = useState([]);
+    const [authorId, setAuthorId] = useState("");
     const [name, setName] = useState("");
+    const [user, setUser] = useState({});
     let postId = useParams().postId;
 
     let navigate = useNavigate();
@@ -21,6 +23,7 @@ function IndividualPost() {
         const unregisterAuthListener = onAuthStateChanged(auth, (firebaseUser) => {
             if (firebaseUser) {
                 setIsAuth(true);
+                setUser(firebaseUser);
             } else {
                 navigate('/login');
             }
@@ -39,6 +42,7 @@ function IndividualPost() {
             let info = data.data();
             setPostInfo(info);
             setName(info.author.name);
+            setAuthorId(info.author.id);
         }
         getPost();
     }, []);
@@ -52,7 +56,7 @@ function IndividualPost() {
         // console.log(event.target.resource.value)
         // console.log(event.target.description.value)
     };
-
+    
     if (isAuth && post) {
         return (
             <div className="individualPage">
@@ -69,9 +73,10 @@ function IndividualPost() {
                     <div className='ip-author'>
                         <h4><pre>{name}  |  {new Date(post.date).toLocaleString()}</pre></h4>
                     </div>
+                    {(user.uid === authorId) && 
                     <div className="deleteButton">
-                        <DeletePost props={{ postId: postId }} />
-                    </div>
+                        <DeletePost props={{ postId: postId }} /> 
+                    </div> }
                 </div>
                 <Comments />
                 <div className="backButton">

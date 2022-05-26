@@ -28,6 +28,13 @@ function Home({ isAuth }) {
         event.preventDefault(event);
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      };
+    
     return (
         <div className='homePage'>
             <header>
@@ -52,6 +59,7 @@ function Home({ isAuth }) {
                     </div>
                 </div>
             })}
+            <button onClick={scrollToTop} className='scroll-button'>&#8679;</button>
         </div>
     );
 }
