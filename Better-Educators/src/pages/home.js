@@ -37,8 +37,13 @@ function Home({ isAuth }) {
         
     };
 
-
-
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      };
+    
 
     return (
         <div className='homePage'>
@@ -62,6 +67,7 @@ function Home({ isAuth }) {
                     <Container triggerText={triggerText} onSubmit={onSubmit}/>
                 </div>
             })}
+            <button onClick={scrollToTop} className='scroll-button'>&#8679;</button>
         </div>
     );
 }
