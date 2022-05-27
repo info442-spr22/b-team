@@ -22,12 +22,8 @@ function Home({ isAuth }) {
         getPosts();
     }, []);
 
-
     const triggerText = 'Report Post';
-    const onSubmit = (event) => {
-        event.preventDefault(event);
-    };
-
+    
     const scrollToTop = () => {
         window.scrollTo({
           top: 0,
@@ -55,7 +51,7 @@ function Home({ isAuth }) {
                     <h4><pre className='locationPre'>{post.location}</pre></h4>
                     <div id='row-for-buttons'>
                     <Link id='link-button' to={"/post/" + post.id}>More Info</Link>
-                    <Container triggerText={triggerText} onSubmit={onSubmit}/>
+                    <Container triggerText={triggerText}/>
                     </div>
                 </div>
             })}
