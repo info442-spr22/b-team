@@ -18,17 +18,16 @@ export const Form = ({ onSubmit }) => {
     const handleChangeFour = () => {
         setValue('Other');
     }
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
 
+        event.preventDefault(event);
+        console.log("this is getting called")
         setOpen(true)
         setTimeout(() => {
             onSubmit()
-            console.log("did this work")
-            
             setOpen(false)
-            
-        }, 1000)
-
+            console.log("did this work")
+        }, 4000)
     }
 
     return (
@@ -96,8 +95,8 @@ export const Form = ({ onSubmit }) => {
                 </button>
             </div>
 
-            <div style={{ display: open ? "block" : "none" }}>
-                Thank you for submitting!Now returning to the previous page.
+            <div className='thank-you-div' style={{ display: open ? "block" : "none" }}>
+                Thank you for submitting! Now returning to the previous page.
                 <br />
                 🦉
             </div>

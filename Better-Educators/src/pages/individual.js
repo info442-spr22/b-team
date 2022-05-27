@@ -48,14 +48,7 @@ function IndividualPost() {
     }, []);
 
     const triggerText = 'Report Post';
-    const onSubmit = (event) => {
-        event.preventDefault(event);
-        // console.log(event.target.name.value)
-        // console.log(event.target.email.value)
-        // console.log(event.target.school.value)
-        // console.log(event.target.resource.value)
-        // console.log(event.target.description.value)
-    };
+
     
     if (isAuth && post) {
         return (
@@ -84,7 +77,7 @@ function IndividualPost() {
                         <Link to={-1}>Back</Link>
                     </button>
                 </div>
-                <Container triggerText={triggerText} onSubmit={onSubmit} />
+                <Container triggerText={triggerText} />
             </div>
         );
     };
