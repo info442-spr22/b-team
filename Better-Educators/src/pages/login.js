@@ -18,7 +18,8 @@ function Login({ setIsAuth }) {
 
     return (
         <div className="SigninPage">
-            <p>Sign in with Google to Continue</p>
+            <h1 className='WelcomeHeader'>Welcome to the Better Educators Website!</h1>
+            <p>In order to access our website make sure you sign in with Google to Continue</p>
             <button className="login-with-google-btn" onClick={signInWithGoogle}>Sign in with Google</button>
         </div>
     )

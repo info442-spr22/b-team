@@ -11,6 +11,11 @@
     font-size: 30px;
   }
   
+  .SigninPage .WelcomeHeader {
+    padding-top: 1rem;
+  }
+
+  /*test*/ 
   /* GOOGLE BUTTOn */
   .login-with-google-btn {
     cursor: pointer;
