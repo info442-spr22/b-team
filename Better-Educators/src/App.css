@@ -21,16 +21,16 @@
     margin: 10px;
     font-size: 18px;
   }
-  
+
   a:hover {
     color: white;
     text-decoration: none;
   }
-  
+
   a:focus {
     color: white;
   }
-  
+
 }
 
 .App-header {
@@ -63,19 +63,28 @@ nav {
     margin: 10px;
     font-size: 25px;
   }
-  
+
   a:hover {
     color: white;
     text-decoration: none;
   }
-  
-  a:focus {
-    color: white;
+
+  a {
+    cursor: hand;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ccc;
+
+
   }
-  
+
+  a:focus {
+    color: #0f0;
+  }
+
 }
 
-.logout-button{
+.logout-button {
   border-radius: 6px;
   color: rgb(0, 0, 0);
   background-color: rgb(210, 219, 224);
@@ -90,6 +99,7 @@ nav {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -173,8 +183,9 @@ nav {
   overflow: hidden;
   margin-right: 17px;
 }
-@media (max-width: 768px) { 
-  .App-header button{
+
+@media (max-width: 768px) {
+  .App-header button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,7 +199,7 @@ nav {
     margin: 0;
   }
 
-  .nav-name{
+  .nav-name {
     font-weight: 700;
     font-size: x-large;
   }
@@ -198,7 +209,7 @@ nav {
   text-align: left;
 }
 
-.nav-name{
+.nav-name {
   position: relative;
   right: 500px;
   font-weight: 700;
