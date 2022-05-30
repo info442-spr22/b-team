@@ -26,7 +26,7 @@
   }
 
   a:hover {
-    color: white;
+    color: #0f0;
     text-decoration: none;
   }
 
@@ -61,7 +61,6 @@ nav {
 
 @media(min-width: 768px) {
   a {
-    color: white;
     text-decoration: none;
     margin: 10px;
     font-size: 25px;
