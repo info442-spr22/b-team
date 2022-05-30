@@ -7,6 +7,9 @@
   pointer-events: none;
 }
 
+.current-page {
+  text-decoration: underline;
+}
 
 @media(max-width: 768px) {
   header p {
@@ -74,14 +77,23 @@ nav {
     cursor: pointer;
     text-decoration: none;
     color: #ccc;
-
-
   }
 
   a:focus {
     color: #0f0;
   }
 
+  .nav-name {
+    position: relative;
+    right: 450px;
+    font-weight: 700;
+    font-size: x-large;
+  }
+
+}
+
+a:focus {
+  color: #0f0;
 }
 
 .logout-button {
@@ -140,6 +152,68 @@ nav {
     max-width: 30em;
     max-height: calc(100% - 1em);
   }
+
+  .nav-name {
+    position: relative;
+    right: 70px;
+    font-weight: 700;
+    font-size: x-large;
+  }
+  
+}
+
+@media screen and (min-width: 600px) {
+  .nav-name {
+    position: relative;
+    right: 120px;
+    font-weight: 700;
+    font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .nav-name {
+    position: relative;
+    right: 170px;
+    font-weight: 700;
+    font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .nav-name {
+    position: relative;
+    right: 240px;
+    font-weight: 700;
+    font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-name {
+    position: relative;
+    right: 300px;
+    font-weight: 700;
+    font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .nav-name {
+    position: relative;
+    right: 330px;
+    font-weight: 700;
+    font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-name {
+    position: relative;
+    right: 450px;
+    font-weight: 700;
+    font-size: x-large;
+  }
 }
 
 ._modal-close {
@@ -193,7 +267,6 @@ nav {
   }
 
   nav {
-    text-align: center;
     flex-direction: row;
     width: 100%;
     margin: 0;
@@ -207,11 +280,4 @@ nav {
 
 nav {
   text-align: left;
-}
-
-.nav-name {
-  position: relative;
-  right: 500px;
-  font-weight: 700;
-  font-size: x-large;
 }
