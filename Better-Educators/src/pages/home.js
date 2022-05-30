@@ -37,7 +37,7 @@ function Home({ isAuth }) {
                 <img src={logo} className="App-logo" alt="logo">
                 </img>
                 <h6 className='slogan'> Committed to making sure no student gets left behind </h6>
-                <p className='page-description'>Log󠁵󠁳 into your educator google account to access a community-based forum to connect educators with other educators. The Better Educators forum is a resource in Washington State to help each other find technology equipment and resources for your students or your classroom. Log in to get started!</p>
+                <p className='page-description'>Log into your educator google account to access a community-based forum to connect educators with other educators. The Better Educators forum is a resource in Washington State to help each other find technology equipment and resources for your students or your classroom. Log in to get started!</p>
             </header>
             {isAuth && postLists.map((post) => {
                 return <div className='post' key={post.id} id={post.id}>
